@@ -1,14 +1,20 @@
 <template>
-  <div class="w-screen min-h-screen bg-gradient-b-gray-pink flex justify-center">
-    <header class="h-16 bg-gray-900 shadow-lg fixed top-0 w-full flex justify-between items-center">
+  <div class="w-full min-h-screen bg-gradient-b-gray-pink flex justify-center">
+    <header
+      class="z-20 h-16 bg-gray-900 shadow-lg fixed top-0 w-full flex justify-between items-center"
+    >
       <i
         class="material-icons clickable text-4xl text-naito-green-100 hover:text-naito-green-200 p-4"
       >menu</i>
       <h1 class="text-xl font-bold text-naito-green-100 mr-4">Naito One</h1>
     </header>
-    <main class="pt-20 container mx-10 sm:mx-20 text-gray-100 text-lg">
+    <main class="py-20 container mx-10 sm:mx-20 text-gray-100 text-lg">
       <section class="section mb-10">
-        <img src="images/naito-colored.svg" alt="Naito One Logo" class="logo h-64 text-white">
+        <img
+          src="images/naito-colored.svg"
+          alt="Naito One Logo"
+          class="logo h-32 lg:h-64 text-white"
+        >
       </section>
       <section class="section mb-10">
         <p
@@ -29,9 +35,9 @@
 .bg-gradient-b-gray-pink {
   background: linear-gradient(
     to bottom,
-    theme('colors.naito-pink.300'),
+    theme('colors.gray.900'),
     steps(8, skip-both),
-    theme('colors.gray.900')
+    theme('colors.naito-pink.300')
   );
 }
 
