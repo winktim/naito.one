@@ -1,0 +1,7 @@
+.clickable {
+  @apply cursor-pointer select-none;
+}
+
+.section {
+  @apply flex flex-col items-center;
+}
