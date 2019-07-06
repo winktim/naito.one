@@ -21,7 +21,7 @@
           id="language-select"
           class="px-2 w-15 h-15 font-heading text-sm"
         >
-          <option value="fr">fr</option>
+          <option value="fr">FR</option>
         </select>
       </div>
     </section>

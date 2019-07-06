@@ -1,5 +1,5 @@
 .clickable {
-  @apply cursor-pointer select-none;
+  @apply cursor-pointer select-none outline-none;
 }
 
 .section {
@@ -51,14 +51,25 @@
 
 .transperent-select {
   > select {
-    @apply cursor-pointer block appearance-none bg-transparent pr-4 rounded;
+    @apply clickable block appearance-none bg-transparent pr-4 rounded;
 
     &:focus {
       @apply outline-none;
     }
 
     > option {
-      @apply bg-gray-900 capitalize;
+      @apply bg-gray-900;
+
+      //prevent <option>s from becoming transparent on firefox
+      &:not(:checked) {
+        @apply text-gray-100;
+      }
+    }
+
+    // hide firefox outline
+    &:-moz-focusring {
+      color: transparent;
+      text-shadow: 0 0 0 theme('colors.gray.100');
     }
   }
 
