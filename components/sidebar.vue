@@ -2,7 +2,7 @@
   <div id="sidebar" :class="sidebarClasses">
     <!-- color overlay -->
     <div class="absolute top-0 left-0 w-full h-full sidebar-gradient"></div>
-    <section class="relative select-none flex justify-between md:justify-center">
+    <section class="relative select-none flex justify-between md:items-center md:mx-4">
       <a
         href="#"
         @click="setSidebarOpened({ sidebarOpened: false })"
@@ -14,7 +14,7 @@
         <img src="/images/naito-white.svg" alt="Nait One Logo" class="h-12" />
         <p class="font-heading text-3xl">Naito.One</p>
       </div>
-      <div class="relative transperent-select md:hidden">
+      <div class="relative transperent-select">
         <select
           aria-label="Choix de la langue"
           name="language-select"
@@ -127,7 +127,7 @@ export default {
       return [
         'background-image',
         'fixed',
-        'z-10',
+        'z-20',
         'w-screen',
         'md:w-64',
         this.sidebarOpened ? '' : 'translate-x--screen',
