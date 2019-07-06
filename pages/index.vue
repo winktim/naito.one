@@ -18,10 +18,17 @@
     <section class="mt-4">
       <h2 class="font-heading text-naito-green-100 text-4xl pl-4">Services</h2>
       <p class="pl-4">Nos services seront bientôt disponibles. Merci de votre patience.</p>
-      <div id="coming-soon-image" class="rounded shadow h-64 mt-8 flex items-center justify-center">
-        <nuxt-link class="action action__big bg-naito-yellow-200 text-gray-900" to="/">
+      <div id="coming-soon-image-outer" class="relative rounded shadow h-64 mt-8 overflow-hidden">
+        <nuxt-link
+          class="absolute action action__big bg-naito-yellow-200 text-gray-900 w-2/3 sm:w-auto z-10"
+          to="/"
+        >
           <span>Bientôt disponible</span>
         </nuxt-link>
+        <div
+          id="coming-soon-image"
+          class="w-full h-full pointer-events-none transition-transform-300"
+        ></div>
       </div>
     </section>
   </div>
@@ -48,10 +55,21 @@ export default {
 }
 </script>
 <style lang="scss">
+#coming-soon-image-outer > a {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#coming-soon-image-outer > a:hover + #coming-soon-image,
+#coming-soon-image-outer > a:active + #coming-soon-image {
+  transform: scale(1.1);
+}
+
 #coming-soon-image {
   background-image: url(/images/coming-soon.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 </style>
