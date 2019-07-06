@@ -1,6 +1,31 @@
 // See default config https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
+const _ = require('lodash')
+
 module.exports = {
   theme: {
+    transform: (theme, { negative }) => ({
+      'screen': '100vw',
+      '-screen': '-100vw',
+
+      ...theme('spacing'),
+      ...negative(theme('spacing')),
+    }),
+    transitionDurations: {
+      100: '100ms',
+      150: '150ms',
+      200: '200ms',
+      300: '300ms',
+      1: '1s',
+    },
+    transitionProperties: {
+      transform: 'transform',
+      opacity: 'opacity',
+      padding: 'padding',
+    },
+    colorVariations: {
+      5: 5,
+      10: 10,
+    },
     extend: {
       colors: {
         'gray': {
@@ -11,13 +36,12 @@ module.exports = {
           '500': '#9e9e9e',
           '600': '#757575',
           '700': '#616161',
-          '800': '#424242',
-          '900': '#212121',
+          '800': 'rgba(66, 66, 66, 0.8)',
+          '900': 'rgba(33, 33, 33, 0.8)',
         },
         'naito-pink': {
-          '100': '#ab2e8e',
-          '200': '#7c235b',
-          '300': '#532241',
+          '100': '#DA91C9',
+          '200': '#BD62C5',
         },
         'naito-green': {
           '100': '#459090',
@@ -28,7 +52,88 @@ module.exports = {
           '200': '#fad65e',
         },
       },
+      spacing: {
+        '15': '3.75rem',
+      },
+      fontFamily: {
+        content: ['Raleway', 'sans-serif'],
+        heading: ['Staatliches', 'sans-serif'],
+      },
+      boxShadow: {
+        'lg-side':
+          '10px 0 15px -3px rgba(0, 0, 0, 0.1), 4px 0px 6px -2px rgba(0, 0, 0, 0.05)',
+      },
     },
   },
   variants: {},
+  plugins: [
+    /**
+     * Transform plugin
+     */
+    function({ addUtilities, addComponents, e, prefix, config }) {
+      const utilities = _.map(config('theme.transform'), (value, key) => {
+        return {
+          [`.${e(`translate-x-${key}`)}`]: {
+            transform: `translateX(${value})`,
+          },
+          [`.${e(`translate-y-${key}`)}`]: {
+            transform: `translateY(${value})`,
+          },
+          [`.${e(`translate-z-${key}`)}`]: {
+            transform: `translateZ(${value})`,
+          },
+        }
+      })
+
+      addUtilities(utilities, {
+        variants: ['responsive'],
+      })
+    },
+    /**
+     * Transition plugin
+     */
+    function({ addUtilities, addComponents, e, prefix, config }) {
+      const utilities = _.map(
+        config('theme.transitionProperties'),
+        (propertyValue, propertyName) => {
+          const out = {}
+
+          _.forEach(
+            config('theme.transitionDurations'),
+            (durationValue, durationName) => {
+              out[`.${e(`transition-${propertyName}`)}-${durationName}`] = {
+                transition: `${propertyValue} ${durationValue} ease-in-out`,
+              }
+            }
+          )
+
+          return out
+        }
+      )
+
+      addUtilities(utilities)
+    },
+    /**
+     * Lighten & Darken utility
+     */
+    function({ addUtilities, addComponents, e, prefix, config }) {
+      const utilities = _.map(
+        config('theme.colorVariations'),
+        (variationValue, variationName) => {
+          return {
+            [`.${e(`lighten-${variationName}`)}`]: {
+              filter: `brightness(${100 + variationValue}%)`,
+            },
+            [`.${e(`darken-${variationName}`)}`]: {
+              filter: `brightness(${100 - variationValue}%)`,
+            },
+          }
+        }
+      )
+
+      addUtilities(utilities, {
+        variants: ['active', 'hover'],
+      })
+    },
+  ],
 }

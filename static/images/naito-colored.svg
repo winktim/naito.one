@@ -16,12 +16,24 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="naito_logo_square.svg"
-   inkscape:export-filename="/home/scott/Dropbox/Naito One/logo-concept-01-square.png"
+   sodipodi:docname="naito-colored.svg"
+   inkscape:export-filename="/home/scott/Dropbox/Naito One/naito-colored-v2.png"
    inkscape:export-xdpi="348.01999"
    inkscape:export-ydpi="348.01999">
   <defs
      id="defs2">
+    <linearGradient
+       id="linearGradient868"
+       inkscape:collect="always">
+      <stop
+         id="stop864"
+         offset="0"
+         style="stop-color:#fded86;stop-opacity:1" />
+      <stop
+         id="stop866"
+         offset="1"
+         style="stop-color:#fad65e;stop-opacity:1" />
+    </linearGradient>
     <linearGradient
        id="linearGradient5420"
        inkscape:collect="always">
@@ -299,7 +311,7 @@
        y2="218.47926" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient5414"
+       xlink:href="#linearGradient868"
        id="linearGradient5462"
        gradientUnits="userSpaceOnUse"
        x1="42.661442"
@@ -314,9 +326,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4"
-     inkscape:cx="105.07025"
-     inkscape:cy="128.14337"
+     inkscape:zoom="2"
+     inkscape:cx="176.76494"
+     inkscape:cy="160.49273"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"

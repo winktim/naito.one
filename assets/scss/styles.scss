@@ -1,0 +1,23 @@
+.background-image {
+  background: #212121;
+  background-image: url(/images/background_low.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position-y: top;
+  background-position-x: center;
+
+  &.background-image__highres {
+    // don't load high res image on mobile
+    @media only screen and (min-device-width: 768px) {
+      background-image: url(/images/background_1920.jpg);
+    }
+  }
+}
+
+#sidebar {
+  background-position-x: left;
+
+  @media (min-width: theme('screens.md')) {
+    background: transparent;
+  }
+}

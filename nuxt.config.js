@@ -8,14 +8,12 @@ export default {
    */
   head: {
     title: 'Naito One',
+    htmlAttrs: {
+      lang: 'fr',
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: "Naito One est une entreprise d'informatique et design",
-      },
       { 'http-equiv': 'X-UA-Compatible', 'content': 'ie=edge' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -31,6 +29,8 @@ export default {
     '~/assets/scss/tailwind.scss',
     '~/assets/scss/icons.scss',
     '~/assets/scss/components.scss',
+    '~/assets/scss/fonts.scss',
+    '~/assets/scss/styles.scss',
   ],
   /*
    ** Plugins to load before mounting the App
