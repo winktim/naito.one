@@ -37,11 +37,11 @@ export default {
      * Max distance from the border to start swiping to open the menu
      */
     let swipeZoneMax = 60
-    let swipeTriggerMin = window.innerWidth / 3
-    let swipeMaxTime = 400
+    let swipeTriggerMin = window.innerWidth / 4
+    let swipeMaxTime = 600
 
     window.onresize = () => {
-      swipeTriggerMin = window.innerWidth / 3
+      swipeTriggerMin = window.innerWidth / 4
     }
 
     let swipeStartX = 0
