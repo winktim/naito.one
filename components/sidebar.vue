@@ -5,7 +5,7 @@
     <section class="relative select-none flex justify-between md:items-center md:mx-4">
       <a
         href="#"
-        @click="setSidebarOpened({ sidebarOpened: false })"
+        @click="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
         class="clickable w-15 h-15 text-gray-100 hover:text-gray-300 flex items-center justify-center text-2xl md:hidden"
       >
         <i class="material-icons">menu</i>
@@ -20,8 +20,15 @@
           name="language-select"
           id="language-select"
           class="px-2 w-15 h-15 font-heading text-sm"
+          @change="SET_LOCALE({ locale: $event.target.value })"
+          :value="locale"
         >
-          <option value="fr">FR</option>
+          <option
+            v-for="(locale, i) in locales"
+            :key="i"
+            :value="locale"
+            v-text="locale.toUpperCase()"
+          ></option>
         </select>
       </div>
     </section>
@@ -50,7 +57,7 @@
               <nuxt-link
                 class="inline-action pl-6 bg-gray-900"
                 to="/"
-                @click.native="setSidebarOpened({ sidebarOpened: false })"
+                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
               >
                 <i class="material-icons pr-4">home</i>Accueil
               </nuxt-link>
@@ -59,7 +66,7 @@
               <nuxt-link
                 class="inline-action pl-6 bg-gray-900"
                 to="/"
-                @click.native="setSidebarOpened({ sidebarOpened: false })"
+                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
               >
                 <i class="material-icons pr-4">settings_remote</i>Bientôt disponible
               </nuxt-link>
@@ -75,7 +82,7 @@
               <nuxt-link
                 class="inline-action pl-6 bg-gray-900"
                 to="/company"
-                @click.native="setSidebarOpened({ sidebarOpened: false })"
+                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
               >
                 <i class="material-icons pr-4">domain</i>Entreprise
               </nuxt-link>
@@ -84,7 +91,7 @@
               <nuxt-link
                 class="inline-action pl-6 bg-gray-900"
                 to="/jobs"
-                @click.native="setSidebarOpened({ sidebarOpened: false })"
+                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
               >
                 <i class="material-icons pr-4">rowing</i>Emplois
               </nuxt-link>
@@ -93,7 +100,7 @@
               <nuxt-link
                 class="inline-action pl-6 bg-gray-900"
                 to="/privacy"
-                @click.native="setSidebarOpened({ sidebarOpened: false })"
+                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
               >
                 <i class="material-icons pr-4">gavel</i>Politique de confidentialité
               </nuxt-link>
@@ -102,7 +109,7 @@
               <nuxt-link
                 class="inline-action pl-6 bg-gray-900"
                 to="/contact"
-                @click.native="setSidebarOpened({ sidebarOpened: false })"
+                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
               >
                 <i class="material-icons pr-4">question_answer</i>Contact
               </nuxt-link>
@@ -117,9 +124,15 @@
 import { mapMutations } from 'vuex'
 export default {
   methods: {
-    ...mapMutations(['setSidebarOpened']),
+    ...mapMutations(['SET_SIDEBAR_OPENED', 'SET_LOCALE']),
   },
   computed: {
+    locales() {
+      return this.$store.state.locales
+    },
+    locale() {
+      return this.$store.state.locale
+    },
     sidebarOpened() {
       return this.$store.state.sidebarOpened
     },

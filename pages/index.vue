@@ -4,8 +4,9 @@
       <img src="/images/naito-colored.svg" alt="Naito One Logo" class="h-40" />
       <h1 class="font-heading text-5xl">Naito.One</h1>
       <p class="text-center text-gray-200">
-        Société suisse d'innovation informatique
-        <br class="lg:hidden" />fondée en 2019
+        {{$t('pages.home.description-line-1')}}
+        <br class="lg:hidden" />
+        {{$t('pages.home.description-line-2')}}
       </p>
       <!--
       <p class="text-gray-300">

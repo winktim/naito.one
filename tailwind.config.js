@@ -18,9 +18,10 @@ module.exports = {
       1: '1s',
     },
     transitionProperties: {
-      transform: 'transform',
-      opacity: 'opacity',
-      padding: 'padding',
+      'transform': 'transform',
+      'opacity': 'opacity',
+      'padding': 'padding',
+      'padding-top': 'padding-top',
     },
     colorVariations: {
       5: 5,
@@ -54,6 +55,10 @@ module.exports = {
       },
       spacing: {
         '15': '3.75rem',
+      },
+      height: {
+        '76': '19rem',
+        '100': '25rem',
       },
       fontFamily: {
         content: ['Raleway', 'sans-serif'],

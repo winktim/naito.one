@@ -1,7 +1,10 @@
 <template>
   <section class="mt-4">
     <h1 class="font-heading text-white text-5xl text-center">Emplois</h1>
-    <p class="pl-4">Ce contenu est en cours de création. Merci de repasser plus tard.</p>
+    <p>
+      Merci de votre intérêt. Naito One ne cherchera
+      <strong>pas de nouveaux collaborateurs en 2019</strong>.
+    </p>
   </section>
 </template>
 <script>

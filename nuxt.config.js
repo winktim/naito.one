@@ -9,7 +9,7 @@ export default {
   head: {
     title: 'Naito One',
     htmlAttrs: {
-      lang: 'fr',
+      lang: 'en',
     },
     meta: [
       { charset: 'utf-8' },
@@ -35,7 +35,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: ['~/plugins/vue-i18n'],
   /*
    ** Nuxt.js modules
    */

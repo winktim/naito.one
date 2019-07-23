@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "about": "À propos",
+    "products": "Produits et services"
+  },
+  "pages": {
+    "company": {
+      "name": "Entreprise"
+    },
+    "contact": {
+      "name": "Contact"
+    },
+    "home": {
+      "description-line-1": "Société suisse d'innovation informatique",
+      "description-line-2": "fondée en 2019"
+    },
+    "jobs": {
+      "name": "Emplois"
+    },
+    "privacy": {
+      "name": "Politique de Confidentialité"
+    }
+  }
+}

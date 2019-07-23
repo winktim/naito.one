@@ -4,7 +4,7 @@
   >
     <a
       href="#"
-      @click="setSidebarOpened({ sidebarOpened: true })"
+      @click="SET_SIDEBAR_OPENED({ sidebarOpened: true })"
       class="clickable w-15 h-15 text-gray-100 hover:text-gray-300 flex items-center justify-center text-2xl"
     >
       <i class="material-icons">menu</i>
@@ -42,7 +42,7 @@
 import { mapMutations } from 'vuex'
 export default {
   methods: {
-    ...mapMutations(['setSidebarOpened']),
+    ...mapMutations(['SET_SIDEBAR_OPENED']),
   },
 }
 </script>

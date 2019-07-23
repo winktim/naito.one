@@ -4,7 +4,7 @@
     <div class="flex-grow flex flex-col md:pl-64">
       <appbar></appbar>
       <main
-        class="flex-grow main-gradient pb-24 pt-15 md:pt-0 transition-padding-200 text-gray-100 px-6 md:px-16 lg:px-32 xl:px-56"
+        class="flex-grow main-gradient pb-24 pt-15 md:pt-0 transition-padding-top-200 text-gray-100 px-6 md:px-16 lg:px-32 xl:px-56"
       >
         <nuxt />
       </main>
@@ -72,11 +72,11 @@ export default {
         // right swipe
         // check that it started in the swip zone
         if (swipeStartX <= swipeZoneMax) {
-          this.$store.commit('setSidebarOpened', { sidebarOpened: true })
+          this.$store.commit('SET_SIDEBAR_OPENED', { sidebarOpened: true })
         }
       } else {
         // left swipe
-        this.$store.commit('setSidebarOpened', { sidebarOpened: false })
+        this.$store.commit('SET_SIDEBAR_OPENED', { sidebarOpened: false })
       }
     }
 

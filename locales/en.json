@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "about": "About",
+    "products": "Products and services"
+  },
+  "pages": {
+    "company": {
+      "name": "Company"
+    },
+    "contact": {
+      "name": "Contact"
+    },
+    "home": {
+      "description-line-1": "Swiss company creating innovative IT solutions",
+      "description-line-2": "founded in 2019"
+    },
+    "jobs": {
+      "name": "Jobs"
+    },
+    "privacy": {
+      "name": "Privacy policy"
+    }
+  }
+}
