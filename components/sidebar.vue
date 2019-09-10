@@ -3,45 +3,53 @@
     <!-- color overlay -->
     <div class="absolute top-0 left-0 w-full h-full sidebar-gradient"></div>
     <section class="relative select-none flex justify-between md:items-center md:mx-4">
-      <a
-        href="#"
-        @click="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
+      <button
+        @click="closeSidebar"
         class="clickable w-15 h-15 text-gray-100 hover:text-gray-300 flex items-center justify-center text-2xl md:hidden"
       >
         <i class="material-icons">menu</i>
-      </a>
+      </button>
       <div class="flex items-center justify-center py-4">
         <img src="/images/naito-white.svg" alt="Nait One Logo" class="h-12" />
         <p class="font-heading text-3xl">Naito.One</p>
       </div>
-      <div class="relative transperent-select">
-        <select
-          aria-label="Choix de la langue"
-          name="language-select"
-          id="language-select"
-          class="px-2 w-15 h-15 font-heading text-sm"
-          @change="SET_LOCALE({ locale: $event.target.value })"
-          :value="locale"
-        >
-          <option
-            v-for="(locale, i) in locales"
-            :key="i"
-            :value="locale"
-            v-text="locale.toUpperCase()"
-          ></option>
-        </select>
-      </div>
+      <language-selector
+        :locale="locale"
+        :locales="locales"
+        :label="'global.set_locale'"
+        name="page"
+        @change="SET_LOCALE($event)"
+      ></language-selector>
     </section>
-    <nav class="relative">
+    <nav class="relative overflow-y-auto max-h-screen-20">
       <!-- quick links -->
       <ul class="mb-8">
+        <!--
+      <li class="my-1">
+        <a
+          class="inline-action pl-4 bg-naito-pink-200 text-white"
+          href="https://studio.naito.one"
+          target="_blank"
+        >
+          <i class="material-icons pr-4">aspect_ratio</i>
+          <span>Studio</span>
+        </a>
+      </li>
+        -->
+        <li class="my-1">
+          <a class="inline-action pl-4 bg-naito-green-200 text-white" :href="`mailto:${email}`">
+            <i class="material-icons pr-4">alternate_email</i>
+            <span v-text="email"></span>
+          </a>
+        </li>
         <li class="my-1">
           <a
-            class="inline-action pl-4 bg-naito-green-200 text-white"
-            :href="`mailto:${$store.state.email}`"
+            class="inline-action pl-4 bg-naito-yellow-200 text-black"
+            href="https://meters.ch"
+            target="_blank"
           >
-            <i class="material-icons pr-4">alternate_email</i>
-            <span>{{$store.state.email}}</span>
+            <i class="material-icons pr-4">insert_chart_outlined</i>
+            <span v-text="$t('pages.meters.quick_access')"></span>
           </a>
         </li>
       </ul>
@@ -49,69 +57,37 @@
       <!-- menu -->
       <ul>
         <li>
-          <p class="flex items-center py-3 px-4 font-semibold bg-gray-800">
-            <i class="material-icons pr-4">category</i>Produits et services
+          <p class="flex items-center py-3 px-4 font-semibold bg-gray-800-trans">
+            <i class="material-icons pr-4">category</i>
+            <span v-text="$t('nav.products')"></span>
           </p>
           <ul>
-            <li>
+            <li v-for="(element, i) in productsServices" :key="i">
               <nuxt-link
-                class="inline-action pl-6 bg-gray-900"
-                to="/"
-                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
+                class="inline-action pl-6 bg-gray-900-tran transition-color-200"
+                :to="{ name: element.to }"
+                @click.native="closeSidebar"
               >
-                <i class="material-icons pr-4">home</i>Accueil
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link
-                class="inline-action pl-6 bg-gray-900"
-                to="/"
-                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
-              >
-                <i class="material-icons pr-4">settings_remote</i>Bientôt disponible
+                <i class="material-icons pr-4" v-text="element.icon"></i>
+                <span v-text="element.text"></span>
               </nuxt-link>
             </li>
           </ul>
         </li>
         <li>
-          <p class="flex items-center py-3 px-4 font-semibold bg-gray-800">
-            <i class="material-icons pr-4">info</i>À propos
+          <p class="flex items-center py-3 px-4 font-semibold bg-gray-800-trans">
+            <i class="material-icons pr-4">info</i>
+            <span v-text="$t('nav.about')"></span>
           </p>
           <ul>
-            <li>
+            <li v-for="(element, i) in about" :key="i">
               <nuxt-link
-                class="inline-action pl-6 bg-gray-900"
-                to="/company"
-                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
+                class="inline-action pl-6 bg-gray-900-trans transition-color-200"
+                :to="{ name: element.to }"
+                @click.native="closeSidebar"
               >
-                <i class="material-icons pr-4">domain</i>Entreprise
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link
-                class="inline-action pl-6 bg-gray-900"
-                to="/jobs"
-                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
-              >
-                <i class="material-icons pr-4">rowing</i>Emplois
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link
-                class="inline-action pl-6 bg-gray-900"
-                to="/privacy"
-                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
-              >
-                <i class="material-icons pr-4">gavel</i>Politique de confidentialité
-              </nuxt-link>
-            </li>
-            <li>
-              <nuxt-link
-                class="inline-action pl-6 bg-gray-900"
-                to="/contact"
-                @click.native="SET_SIDEBAR_OPENED({ sidebarOpened: false })"
-              >
-                <i class="material-icons pr-4">question_answer</i>Contact
+                <i class="material-icons pr-4" v-text="element.icon"></i>
+                <span v-text="element.text"></span>
               </nuxt-link>
             </li>
           </ul>
@@ -121,17 +97,25 @@
   </div>
 </template>
 <script>
+import LanguageSelector from './language-selector.vue'
 import { mapMutations } from 'vuex'
 export default {
+  components: { LanguageSelector },
   methods: {
-    ...mapMutations(['SET_SIDEBAR_OPENED', 'SET_LOCALE']),
+    closeSidebar() {
+      this.$store.commit('SET_SIDEBAR_OPENED', { sidebarOpened: false })
+    },
+    ...mapMutations(['SET_LOCALE']),
   },
   computed: {
-    locales() {
-      return this.$store.state.locales
+    email() {
+      return this.$store.state.email
     },
     locale() {
       return this.$store.state.locale
+    },
+    locales() {
+      return this.$store.state.locales
     },
     sidebarOpened() {
       return this.$store.state.sidebarOpened
@@ -142,13 +126,51 @@ export default {
         'fixed',
         'z-20',
         'w-screen',
+        'h-screen',
         'md:w-64',
         this.sidebarOpened ? '' : 'translate-x--screen',
         'md:translate-x-0',
         'transition-transform-100',
-        'h-screen',
         'text-gray-100',
         'shadow-lg-side',
+      ]
+    },
+    productsServices() {
+      return [
+        {
+          to: 'index',
+          icon: 'home',
+          text: this.$t('pages.index.title'),
+        },
+        {
+          to: 'meters',
+          icon: 'settings_remote',
+          text: this.$t('pages.meters.title'),
+        },
+      ]
+    },
+    about() {
+      return [
+        {
+          to: 'company',
+          icon: 'domain',
+          text: this.$t('pages.company.title'),
+        },
+        {
+          to: 'jobs',
+          icon: 'rowing',
+          text: this.$t('pages.jobs.title'),
+        },
+        {
+          to: 'privacy',
+          icon: 'gavel',
+          text: this.$t('pages.privacy.title'),
+        },
+        {
+          to: 'contact',
+          icon: 'question_answer',
+          text: this.$t('pages.contact.title'),
+        },
       ]
     },
   },

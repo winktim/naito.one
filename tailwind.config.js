@@ -22,6 +22,7 @@ module.exports = {
       'opacity': 'opacity',
       'padding': 'padding',
       'padding-top': 'padding-top',
+      'color': 'color',
     },
     colorVariations: {
       5: 5,
@@ -37,8 +38,10 @@ module.exports = {
           '500': '#9e9e9e',
           '600': '#757575',
           '700': '#616161',
-          '800': 'rgba(66, 66, 66, 0.8)',
-          '900': 'rgba(33, 33, 33, 0.8)',
+          '800': '#424242',
+          '900': '#212121',
+          '800-trans': 'rgba(66, 66, 66, 0.8)',
+          '900-trans': 'rgba(33, 33, 33, 0.8)',
         },
         'naito-pink': {
           '100': '#DA91C9',
@@ -60,9 +63,21 @@ module.exports = {
         '76': '19rem',
         '100': '25rem',
       },
+      maxHeight: {
+        'screen-20': 'calc(100vh - 5rem)',
+      },
       fontFamily: {
         content: ['Raleway', 'sans-serif'],
         heading: ['Staatliches', 'sans-serif'],
+      },
+      borderRadius: {
+        md: '0.3rem',
+      },
+      inset: {
+        full: '100%',
+      },
+      zIndex: {
+        bottom: '-1',
       },
       boxShadow: {
         'lg-side':

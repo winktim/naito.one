@@ -1,24 +1,47 @@
 {
+  "global": {
+    "set_locale": "Language selection"
+  },
+  "alt": {
+    "naito_one_logo": "Naito One Logo"
+  },
   "nav": {
     "about": "About",
     "products": "Products and services"
   },
   "pages": {
     "company": {
-      "name": "Company"
+      "title": "Company",
+      "description": "Information about the Naito One company",
+      "keywords": "Information,Company,Details"
     },
     "contact": {
-      "name": "Contact"
+      "title": "Contact",
+      "description": "Contact details of the Naito One company",
+      "keywords": "Contact,Email,Message,Reach"
     },
-    "home": {
-      "description-line-1": "Swiss company creating innovative IT solutions",
-      "description-line-2": "founded in 2019"
+    "index": {
+      "title": "Home",
+      "description": "Naito One is a swiss IT and design company",
+      "keywords": "Home,Services,Products,Introduction",
+      "description_line_1": "Swiss company creating innovative IT solutions",
+      "description_line_2": "founded in 2019"
     },
     "jobs": {
-      "name": "Jobs"
+      "title": "Jobs",
+      "description": "Job opening of the Naito One company",
+      "keywords": "Jobs,Offre,Join,Work"
     },
     "privacy": {
-      "name": "Privacy policy"
+      "title": "Privacy policy",
+      "description": "Naito One's privacy policy",
+      "keywords": "Policy,Privacy,Private,Data"
+    },
+    "meters": {
+      "title": "Meters",
+      "description": "Meters is a service that helps companies keep track of their energy consumption and temperatures",
+      "keywords": "Service,Consumption,Energy,Temperature,Sensor",
+      "quick_access": "Meters.ch"
     }
   }
 }

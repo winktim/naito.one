@@ -1,12 +1,12 @@
 <template>
   <div>
     <section class="flex flex-col items-center">
-      <img src="/images/naito-colored.svg" alt="Naito One Logo" class="h-40" />
+      <img src="/images/naito-colored.svg" :alt="$t('alt.naito_one_logo')" class="h-40" />
       <h1 class="font-heading text-5xl">Naito.One</h1>
       <p class="text-center text-gray-200">
-        {{$t('pages.home.description-line-1')}}
+        <span v-text="$t('pages.index.description_line_1')"></span>
         <br class="lg:hidden" />
-        {{$t('pages.home.description-line-2')}}
+        <span v-text="$t('pages.index.description_line_2')"></span>
       </p>
       <!--
       <p class="text-gray-300">
@@ -21,7 +21,7 @@
       <p class="pl-4">Nos services seront bientôt disponibles. Merci de votre patience.</p>
       <div id="coming-soon-image-outer" class="relative rounded shadow h-64 mt-8 overflow-hidden">
         <nuxt-link
-          class="absolute action action__big bg-naito-yellow-200 text-gray-900 w-2/3 sm:w-auto z-10"
+          class="absolute action p-6 bg-naito-yellow-200 text-gray-900 w-2/3 sm:w-auto z-10"
           to="/"
         >
           <span>Bientôt disponible</span>
@@ -38,20 +38,28 @@
 export default {
   head() {
     return {
-      title: 'Accueil - Naito One',
+      title: `${this.title} - Naito One`,
+      htmlAttrs: {
+        lang: this.$store.state.locale,
+      },
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: "Naito One est une entreprise d'informatique et design",
+          content: this.$t('pages.index.description'),
         },
         {
           hid: 'keywords',
           name: 'keywords',
-          content: 'Accueil,Services,Produits,Présentation',
+          content: this.$t('pages.index.keywords'),
         },
       ],
     }
+  },
+  computed: {
+    title() {
+      return this.$t('pages.index.title')
+    },
   },
 }
 </script>

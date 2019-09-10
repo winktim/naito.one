@@ -16,19 +16,19 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('pages.contact.description'),
+          content: this.$t('pages.meters.description'),
         },
         {
           hid: 'keywords',
           name: 'keywords',
-          content: this.$t('pages.contact.keywords'),
+          content: this.$t('pages.meters.keywords'),
         },
       ],
     }
   },
   computed: {
     title() {
-      return this.$t('pages.contact.title')
+      return this.$t('pages.meters.title')
     },
   },
 }

@@ -1,24 +1,47 @@
 {
+  "global": {
+    "set_locale": "Choix de la langue"
+  },
+  "alt": {
+    "naito_one_logo": "Logo Naito One"
+  },
   "nav": {
     "about": "À propos",
     "products": "Produits et services"
   },
   "pages": {
     "company": {
-      "name": "Entreprise"
+      "title": "Entreprise",
+      "description": "Informations concernant l'entreprise Naito One",
+      "keywords": "Informations,Entreprise,Détails"
     },
     "contact": {
-      "name": "Contact"
+      "title": "Contact",
+      "description": "Informations de contact de l'entreprise Naito One",
+      "keywords": "Contact,Email,Message,Joindre"
     },
-    "home": {
-      "description-line-1": "Société suisse d'innovation informatique",
-      "description-line-2": "fondée en 2019"
+    "index": {
+      "title": "Accueil",
+      "description": "Naito One est une société suisse d'informatique et design",
+      "keywords": "Accueil,Services,Produits,Présentation",
+      "description_line_1": "Société suisse d'innovation informatique",
+      "description_line_2": "fondée en 2019"
     },
     "jobs": {
-      "name": "Emplois"
+      "title": "Emplois",
+      "description": "Offres d'emplois de l'entreprise Naito One",
+      "keywords": "Emplois,Offres,Rejoindre,Travailler"
     },
     "privacy": {
-      "name": "Politique de Confidentialité"
+      "title": "Politique de Confidentialité",
+      "description": "Politique de confidentialité de l'entreprise Naito One",
+      "keywords": "Politique,Confidentialité,Privé,Données"
+    },
+    "meters": {
+      "title": "Meters",
+      "description": "Meters est un service qui aide les entreprises à suivre leur consommation d'énergies et leurs températures",
+      "keywords": "Service,Consommation,Énergie,Température,Capteur",
+      "quick_access": "Meters.ch"
     }
   }
 }

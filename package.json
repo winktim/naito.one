@@ -5,25 +5,29 @@
   "author": "Tim Winkelmann",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NUXT_HOST=0.0.0.0 nuxt",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "cross-env NUXT_HOST=0.0.0.0 nuxt start",
     "generate": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
+    "cookie": "^0.4.0",
+    "luxon": "^1.17.2",
     "node-sass": "^4.12.0",
     "nuxt": "^2.0.0",
     "nuxt-purgecss": "^0.2.1",
-    "postcss-easing-gradients": "^3.0.1",
     "sass-loader": "^7.1.0",
     "vue-i18n": "^8.11.2"
   },
   "devDependencies": {
+    "@nuxtjs/markdownit-loader": "^1.1.1",
+    "cross-env": "^5.2.0",
     "lodash": "^4.17.11",
     "nodemon": "^1.18.9",
     "prettier": "^1.16.4",
     "push-dir": "^0.4.1",
+    "raw-loader": "^3.1.0",
     "tailwindcss": "^1.0.0"
   }
 }
