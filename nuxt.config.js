@@ -68,9 +68,6 @@ export default {
       path.join(__dirname, './layouts/**/*.vue'),
       path.join(__dirname, './components/**/*.vue'),
     ]),
-    // whitelist for markdown
-    whitelist: ['.marked', 'h1', 'ul', 'ol', 'pre', 'code', 'blockquote'],
-    whitelistPatterns: [/\bhljs\S*/],
   },
 
   /*
@@ -86,29 +83,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {
-      config.resolve.alias.locales = __dirname + '/locales'
-
-      config.module.rules.push({
-        test: /\.md/,
-        use: [
-          { loader: 'raw-loader' },
-          {
-            loader: 'markdownit-loader',
-            options: {
-              link_open: (tokens, idx, options, env, slf) => {
-                const token = tokens[idx]
-                token.attrs = token.attrs.map(attr => {
-                  if (attr[0] === 'href') attr[0] = 'to'
-                  return attr
-                })
-                return '<nuxt-link' + slf.renderAttrs(token) + '>'
-              },
-              link_close: () => '</nuxt-link>',
-            },
-          },
-        ],
-      })
-    },
+    extend(config, ctx) {},
   },
 }

@@ -21,13 +21,11 @@
     "vue-i18n": "^8.11.2"
   },
   "devDependencies": {
-    "@nuxtjs/markdownit-loader": "^1.1.1",
     "cross-env": "^5.2.0",
     "lodash": "^4.17.11",
     "nodemon": "^1.18.9",
     "prettier": "^1.16.4",
     "push-dir": "^0.4.1",
-    "raw-loader": "^3.1.0",
     "tailwindcss": "^1.0.0"
   }
 }

@@ -1,11 +1,11 @@
 <template>
   <section class="mt-4 marked">
-    <component :is="renderedMd"></component>
+    <component :is="localeContent"></component>
   </section>
 </template>
 <script>
-import en from 'locales/en/company.md'
-import fr from 'locales/fr/company.md'
+import en from '~/locales/en/company'
+import fr from '~/locales/fr/company'
 
 const content = {
   en,
@@ -33,15 +33,13 @@ export default {
       ],
     }
   },
+  components: { en, fr },
   computed: {
     title() {
       return this.$t('pages.company.title')
     },
-    renderedMd() {
-      return {
-        name: 'DynamicComponent',
-        template: content[this.$i18n.locale],
-      }
+    localeContent() {
+      return content[this.$i18n.locale]
     },
   },
 }

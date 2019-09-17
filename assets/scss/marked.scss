@@ -13,19 +13,19 @@
     @apply mb-4;
   }
 
-  img {
-    @apply max-w-full rounded-md mb-2;
+  figure {
+    @apply flex flex-col items-center mb-4;
 
-    @media (min-width: theme('screens.sm')) {
-      max-width: 300px;
+    > img {
+      @apply max-w-full rounded-md mb-2;
+
+      @media (min-width: theme('screens.sm')) {
+        max-width: 300px;
+      }
     }
-  }
 
-  blockquote {
-    @apply flex justify-center italic;
-
-    > p {
-      @apply flex flex-col items-center text-center;
+    > caption {
+      @apply italic;
     }
   }
 
