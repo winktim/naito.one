@@ -4,7 +4,7 @@ import glob from 'glob-all'
 const features = ['es2015', 'es2016', 'IntersectionObserver'].join('%2C')
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
    ** Headers of the page
    */
@@ -54,7 +54,7 @@ export default {
   plugins: ['~/plugins/vue-i18n'],
 
   router: {
-    middleware: 'i18n',
+    middleware: 'client-data',
   },
 
   /*

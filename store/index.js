@@ -1,6 +1,3 @@
-import { serialize, parse } from 'cookie'
-import { Duration } from 'luxon'
-
 export const state = () => ({
   email: 'hello@naito.one',
   sidebarOpened: false,
@@ -19,13 +16,7 @@ export const mutations = {
       state.locale = locale
 
       this.app.i18n.locale = locale
-
-      // update the document cookie if document exists
-      if (typeof document !== 'undefined') {
-        document.cookie = serialize('locale', locale, {
-          maxAge: Duration.fromObject({ year: 1 }).as('seconds'),
-        })
-      }
+      localStorage.setItem('locale', locale)
     }
   },
   SET_READ_CLIENT_DATA(state, { readClientData }) {
