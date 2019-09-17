@@ -24,7 +24,12 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
+    noscript: [
+      {
+        innerHTML: 'This website requires JavaScript.',
+        body: true,
+      },
+    ],
 
     script: [
       {
@@ -32,11 +37,13 @@ export default {
         body: true,
       },
     ],
+    // critical css
+    link: [{ rel: 'stylesheet', href: '/critical.css' }],
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#333' },
   /*
    ** Global CSS
    */
