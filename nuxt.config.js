@@ -69,8 +69,8 @@ export default {
       path.join(__dirname, './layouts/**/*.vue'),
       path.join(__dirname, './components/**/*.vue'),
     ]),
-    // whitelist for markdown
-    whitelist: ['.nuxt-link-exact-active'],
+    whitelist: ['nuxt-link-exact-active'],
+    whitelistPatternsChildren: [/marked$/],
   },
 
   /*
