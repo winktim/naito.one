@@ -9,6 +9,10 @@
   cursor: not-allowed;
 }
 
+.simple-action {
+  @apply clickable flex items-center justify-center;
+}
+
 .action {
   @apply clickable flex items-center justify-center py-2 px-4 rounded-md font-semibold;
 }
@@ -17,14 +21,15 @@
   @apply clickable flex items-center py-3 pr-4 font-semibold;
 }
 
+.simple-action,
 .action,
 .inline-action {
   &:hover:not(:disabled) {
-    @apply shadow-lg;
+    @apply shadow-lg lighten-5;
   }
 
   &:active:not(:disabled) {
-    @apply shadow-none;
+    @apply shadow-none darken-5;
   }
 
   &:disabled {
@@ -33,14 +38,6 @@
 
   &:focus:not(:disabled) {
     @apply shadow-outline;
-  }
-
-  &:hover:not(:disabled) {
-    @apply lighten-5;
-  }
-
-  &:active:not(:disabled) {
-    @apply darken-5;
   }
 }
 

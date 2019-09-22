@@ -25,7 +25,13 @@
       "description": "Naito One est une société suisse d'informatique et design",
       "keywords": "Accueil,Services,Produits,Présentation",
       "description_line_1": "Société suisse d'innovation informatique",
-      "description_line_2": "fondée en 2019"
+      "description_line_2": "fondée en 2019",
+      "services": {
+        "meters": {
+          "description": "Meters est un service qui vous aide à gérer la consommation énergétique de votre entreprise ainsi que vos températures.",
+          "discover": "Découvrir Meters"
+        }
+      }
     },
     "jobs": {
       "title": "Emplois",
