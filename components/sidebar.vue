@@ -10,7 +10,7 @@
         <i class="material-icons">menu</i>
       </button>
       <div class="flex items-center justify-center py-4">
-        <img src="/images/naito-white.svg" alt="Nait One Logo" class="h-12" />
+        <img src="/images/naito-white.svg" alt="Nait One Logo" class="h-10 mx-1" />
         <p class="font-heading text-3xl">Naito.One</p>
       </div>
       <language-selector
