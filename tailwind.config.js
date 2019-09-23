@@ -23,6 +23,7 @@ module.exports = {
       'padding': 'padding',
       'padding-top': 'padding-top',
       'color': 'color',
+      'background': 'background',
     },
     colorVariations: {
       5: 5,
@@ -62,6 +63,10 @@ module.exports = {
       height: {
         '76': '19rem',
         '100': '25rem',
+      },
+      width: {
+        '72': '18rem',
+        '168': '42rem',
       },
       maxHeight: {
         'screen-20': 'calc(100vh - 5rem)',
@@ -153,6 +158,25 @@ module.exports = {
 
       addUtilities(utilities, {
         variants: ['active', 'hover'],
+      })
+    },
+    /**
+     * Flip utility
+     */
+    function({ addUtilities, addComponents, e, prefix, config }) {
+      const utilities = [
+        {
+          [`.${e(`flip-x`)}`]: {
+            transform: `scaleX(-1)`,
+          },
+          [`.${e(`flip-y`)}`]: {
+            transform: `scaleY(-1)`,
+          },
+        },
+      ]
+
+      addUtilities(utilities, {
+        variants: ['responsive'],
       })
     },
   ],

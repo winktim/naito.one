@@ -9,7 +9,7 @@
     </p>
 
     <figure>
-      <img src="/images/human.jpg" alt="Photo du directeur" />
+      <img class="md:w-72" src="/images/human.jpg" alt="Photo du directeur" />
       <caption>
         Tim Winkelmann,
         <br />Directeur Naito One

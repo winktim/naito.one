@@ -76,3 +76,42 @@
     @apply material-icons-pseudo absolute pointer-events-none;
   }
 }
+
+// Range Slider
+
+.range-slider__range {
+  @apply bg-naito-green-200 w-full appearance-none h-4 rounded-lg outline-none p-0 m-0 mt-2;
+
+  // Range Handle
+  &::-webkit-slider-thumb {
+    @apply w-6 h-6 rounded-full bg-gray-300 cursor-pointer appearance-none transition-background-100;
+
+    &:hover {
+      @apply bg-gray-200;
+    }
+  }
+
+  &:active::-webkit-slider-thumb {
+    @apply bg-gray-200;
+  }
+
+  &::-moz-range-thumb {
+    @apply w-6 h-6 border-none rounded-full bg-gray-300 cursor-pointer appearance-none transition-background-100;
+
+    &:hover {
+      @apply bg-gray-200;
+    }
+  }
+
+  &:active::-moz-range-thumb {
+    @apply bg-gray-100;
+  }
+
+  // Focus state
+  &:focus {
+    &::-webkit-slider-thumb {
+      box-shadow: 0 0 0 3px theme('colors.gray.900'),
+        0 0 0 6px theme('colors.gray.100');
+    }
+  }
+}

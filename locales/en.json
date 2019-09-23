@@ -47,7 +47,17 @@
       "title": "Meters",
       "description": "Meters is a service that helps companies keep track of their energy consumption and temperatures",
       "keywords": "Service,Consumption,Energy,Temperature,Sensor",
-      "quick_access": "Meters.ch"
+      "quick_access": "Meters.ch",
+      "demo_access": "Ask for demo access !",
+      "demo_access_email_subject": "Meters demo access request",
+      "how_many_temp": "How many temperature sensors do you want to deploy?",
+      "how_many_mbus": "How many resource sensors do you want to deploy?",
+      "offer": "Request a quotation",
+      "offer_email_subject": "Quotation request for the Meters product",
+      "per_month": "CHF {amount} / month",
+      "then": "then",
+      "sensors": "no sensors | one sensor | {count} sensors",
+      "notice": "Only meters eqquiped with the M-BUS technology can be read from. Naito One does not offer the replacement of the meters in it's services. Any change must be undertaken by the client. A Wifi network must cover the location of the sensors. Naito One does not offer the installation or extension of Wifi networks in it's services. The update of the network must be undertaken by the client."
     }
   }
 }

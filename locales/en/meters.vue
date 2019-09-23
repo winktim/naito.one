@@ -1,6 +1,6 @@
 <template>
   <div lang="en">
-    <h1>Company</h1>
+    <h1>Meters</h1>
 
     <p>
       <strong>Naito One</strong> is a swiss innovative IT company.
@@ -9,7 +9,7 @@
     </p>
 
     <figure>
-      <img class="md:w-72" src="/images/human.jpg" alt="Photo of the CEO" />
+      <img src="/images/human.jpg" alt="Photo of the CEO" />
       <caption>
         Tim Winkelmann,
         <br />CEO Naito One

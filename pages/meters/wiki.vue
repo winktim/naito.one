@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a ref="link" :href="wikiURL">Wiki</a>
+    <a ref="link" :href="wikiUrl">Wiki</a>
   </div>
 </template>
 <script>
@@ -9,11 +9,8 @@ export default {
     this.$refs.link.click()
   },
   computed: {
-    wikiURL() {
-      return (
-        'https://github.com/winktim/meters.ch/wiki' +
-        (this.$store.state.locale === 'fr' ? '/Home-fr' : '')
-      )
+    wikiUrl() {
+      return this.$store.getters.wikiUrl
     },
   },
 }

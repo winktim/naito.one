@@ -29,7 +29,10 @@
             v-text="$t('pages.index.services.meters.discover')"
           ></span>
         </nuxt-link>
-        <div id="meters-image" class="w-full h-full pointer-events-none transition-transform-300"></div>
+        <div
+          id="meters-image"
+          class="w-full h-full pointer-events-none transition-transform-300 darken-10"
+        ></div>
       </div>
     </section>
   </div>

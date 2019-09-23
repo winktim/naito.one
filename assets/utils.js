@@ -14,3 +14,22 @@ export function getNavigatorLanguage() {
     )
   }
 }
+
+/**
+ * Map from the simple language local to the full locale for number formatting
+ */
+export const numberLocale = {
+  en: 'en-ch',
+  fr: 'de-ch',
+  de: 'de-ch',
+}
+
+export const noDecimalFormat = {
+  minimumFractionDigits: 0,
+  maximumFractionDigits: 0,
+}
+
+export const oneDecimalFormat = {
+  minimumFractionDigits: 1,
+  maximumFractionDigits: 1,
+}

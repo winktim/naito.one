@@ -23,3 +23,9 @@ export const mutations = {
     state.readClientData = readClientData
   },
 }
+
+export const getters = {
+  wikiUrl: state =>
+    'https://github.com/winktim/meters.ch/wiki' +
+    (state.locale === 'fr' ? '/Home-fr' : ''),
+}

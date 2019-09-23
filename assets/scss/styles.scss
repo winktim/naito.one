@@ -139,3 +139,21 @@ $reveal-time: 3s;
 .nuxt-link-exact-active {
   @apply text-naito-yellow-100;
 }
+
+@keyframes move-banner {
+  from {
+    transform: scale(1.05) translateY(-5px);
+  }
+  to {
+    transform: scale(1.08) translateY(5px);
+  }
+}
+
+#meters-banner {
+  background-image: url(/images/meters-app-01-small.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  animation: move-banner 10s alternate-reverse infinite ease-in-out;
+}
