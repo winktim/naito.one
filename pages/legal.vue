@@ -16,19 +16,19 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.$t('pages.privacy.description'),
+          content: this.$t('pages.legal.description'),
         },
         {
           hid: 'keywords',
           name: 'keywords',
-          content: this.$t('pages.privacy.keywords'),
+          content: this.$t('pages.legal.keywords'),
         },
       ],
     }
   },
   computed: {
     title() {
-      return this.$t('pages.privacy.title')
+      return this.$t('pages.legal.title')
     },
   },
 }

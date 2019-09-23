@@ -38,10 +38,10 @@
       "description": "Job opening of the Naito One company",
       "keywords": "Jobs,Offre,Join,Work"
     },
-    "privacy": {
-      "title": "Privacy policy",
-      "description": "Naito One's privacy policy",
-      "keywords": "Policy,Privacy,Private,Data"
+    "legal": {
+      "title": "Legal information",
+      "description": "Naito One's privacy policy, termes of use and other legal documents",
+      "keywords": "Termes,Privacy,Legal"
     },
     "meters": {
       "title": "Meters",

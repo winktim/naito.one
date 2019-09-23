@@ -11,7 +11,7 @@
       <!--
       <p class="text-gray-300">
         Ici,
-        <nuxt-link class="yellow-link" to="/privacy">on ne vous traque pas</nuxt-link>.
+        <nuxt-link class="yellow-link" to="/legal">on ne vous traque pas</nuxt-link>.
       </p>
       -->
     </section>

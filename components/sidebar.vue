@@ -162,9 +162,9 @@ export default {
           text: this.$t('pages.jobs.title'),
         },
         {
-          to: 'privacy',
+          to: 'legal',
           icon: 'gavel',
-          text: this.$t('pages.privacy.title'),
+          text: this.$t('pages.legal.title'),
         },
         {
           to: 'contact',

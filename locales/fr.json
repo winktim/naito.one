@@ -38,10 +38,10 @@
       "description": "Offres d'emplois de l'entreprise Naito One",
       "keywords": "Emplois,Offres,Rejoindre,Travailler"
     },
-    "privacy": {
-      "title": "Politique de Confidentialité",
-      "description": "Politique de confidentialité de l'entreprise Naito One",
-      "keywords": "Politique,Confidentialité,Privé,Données"
+    "legal": {
+      "title": "Informations légales",
+      "description": "Politique de confidentialité, conditions d'utilisation et autres documents légaux de l'entreprise Naito One",
+      "keywords": "Conditions,Confidentialité,Légale"
     },
     "meters": {
       "title": "Meters",
