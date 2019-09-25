@@ -14,10 +14,16 @@
 <script>
 import Appbar from '../components/appbar.vue'
 import Sidebar from '../components/sidebar.vue'
+
+import clientData from '../middleware/client-data'
 export default {
   components: {
     Appbar,
     Sidebar,
+  },
+  beforeMount() {
+    // get client data
+    clientData({ store: this.$store })
   },
   mounted() {
     const connection = navigator.connection
