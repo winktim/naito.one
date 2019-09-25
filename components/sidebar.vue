@@ -47,6 +47,7 @@
             class="inline-action pl-4 bg-naito-yellow-200 text-black"
             href="https://meters.ch"
             target="_blank"
+            rel="noopener"
           >
             <i class="material-icons pr-4">insert_chart_outlined</i>
             <span v-text="$t('pages.meters.quick_access')"></span>
