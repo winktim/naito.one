@@ -9,6 +9,10 @@
   cursor: not-allowed;
 }
 
+.hover-action {
+  @apply select-none flex items-center justify-center;
+}
+
 .simple-action {
   @apply clickable flex items-center justify-center;
 }
@@ -19,6 +23,16 @@
 
 .inline-action {
   @apply clickable flex items-center py-3 pr-4 font-semibold;
+}
+
+.hover-action {
+  &:hover:not(:disabled) {
+    @apply shadow-lg lighten-5;
+  }
+
+  &:disabled {
+    @apply disabled;
+  }
 }
 
 .simple-action,
@@ -113,5 +127,68 @@
       box-shadow: 0 0 0 3px theme('colors.gray.900'),
         0 0 0 6px theme('colors.gray.100');
     }
+  }
+}
+
+.title-on-click {
+  @apply relative;
+  &:hover::after {
+    @apply absolute left-0 w-full bg-gray-800 text-gray-100 shadow-lg rounded-md p-4 mb-2;
+    bottom: 100%;
+    content: attr(title);
+  }
+}
+
+.material-radio,
+.material-checkbox {
+  > .material-radio-fake,
+  > .material-checkbox-fake {
+    @apply p-2 cursor-pointer;
+    &::after {
+      content: 'check_box_outline_blank';
+
+      @apply material-icons-pseudo pointer-events-none select-none text-xl;
+    }
+  }
+
+  // other icon for the radio
+  > .material-radio-fake::after {
+    content: 'radio_button_unchecked';
+  }
+
+  > input {
+    // display flex so it stopts taking place in the DOM
+    // don't display: none because then it is not focusable
+    // firefox: can't set widht/height for checkbox, so use transform
+    transform: scale(0);
+    // this makes sure it doesn't take space in the DOM
+    @apply absolute;
+
+    &:checked ~ .material-checkbox-fake::after {
+      content: 'check_box';
+    }
+
+    // other icon for the radio
+    &:checked ~ .material-radio-fake::after {
+      content: 'radio_button_checked';
+    }
+
+    &:disabled ~ .material-radio-fake::after,
+    &:disabled ~ .material-checkbox-fake::after {
+      @apply disabled;
+    }
+
+    &:focus ~ .material-radio-fake::after,
+    &:focus ~ .material-checkbox-fake::after {
+      @apply shadow-outline;
+    }
+  }
+
+  &:hover {
+    @apply lighten-5;
+  }
+
+  &:active {
+    @apply darken-5;
   }
 }

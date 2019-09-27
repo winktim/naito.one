@@ -1,6 +1,6 @@
 <template>
   <header
-    class="fixed top-0 w-full h-15 md:translate-y--15 appbar-gradient shadow-lg flex items-center justify-between transition-transform-200"
+    class="z-20 fixed top-0 w-full h-15 md:translate-y--15 appbar-gradient shadow-lg flex items-center justify-between transition-transform-200"
   >
     <button
       @click="openSidebar"

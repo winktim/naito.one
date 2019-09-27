@@ -54,10 +54,25 @@
       "how_many_mbus": "How many resource sensors do you want to deploy?",
       "offer": "Request a quotation",
       "offer_email_subject": "Quotation request for the Meters product",
+      "offer_email_body": "<Tell us more about your company here.>\n\n- Years of service: {service}\n- Number of temperature sensors: {temp}\n- Number of resource sensors: {mbus}",
       "per_month": "CHF {amount} / month",
       "then": "then",
       "sensors": "no sensors | one sensor | {count} sensors",
-      "notice": "Only meters eqquiped with the M-BUS technology can be read from. Naito One does not offer the replacement of the meters in it's services. Any change must be undertaken by the client. A Wifi network must cover the location of the sensors. Naito One does not offer the installation or extension of Wifi networks in it's services. The update of the network must be undertaken by the client."
+      "notice": "Only meters eqquiped with the M-BUS technology can be read from. Naito One does not offer the replacement of the meters in it's services. Any change must be undertaken by the client. A Wifi network must cover the location of the sensors. Naito One does not offer the installation or extension of Wifi networks in it's services. The update of the network must be undertaken by the client. A household outlet must be available for each sensor. Naito One does not offer the installation or extensoin of electrical installations in it's services. The client must ensure the availability of power outlets.",
+      "discounts": {
+        "hardware": "Discount per sensor: CHF {amount}",
+        "service": "Discount per sensor per month: CHF {amount}"
+      },
+      "discounts_explained": {
+        "hardware": "The more sensors you buy, the cheaper they get.",
+        "service": "A discount per sensor per month is given if the contract is signed for more than a year, and the more sensors you buy, the cheaper they get per month."
+      },
+      "years": {
+        "service_duration": "How many years do you wish to pay at once?",
+        "one": "One year",
+        "two": "Two year",
+        "three": "Three year"
+      }
     }
   }
 }

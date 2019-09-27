@@ -124,7 +124,7 @@ export default {
       return [
         'background-image',
         'fixed',
-        'z-20',
+        'z-30',
         'w-screen',
         'h-screen',
         'md:w-64',

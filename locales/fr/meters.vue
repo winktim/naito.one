@@ -15,7 +15,7 @@
       <i class="material-icons mr-4">trending_down</i>
       <span>
         Vous avez du mal à
-        <strong>diminuer votre consommation</strong> d'eau, gaz, ou toute autre ressource ?
+        <strong>diminuer votre consommation</strong> d'eau, gaz, mazout ou encore électricité ?
       </span>
     </div>
     <div
@@ -39,7 +39,7 @@
 
     <p>
       <strong>Meters</strong> a été développé spécialement pour répondre à vos besoins !
-      <br />Après l'installation de capteurs sur vos compteurs d'eau, gaz, ou tous autres ressources, ou l'installation de capteurs de température dans vos locaux,
+      <br />Après l'installation de capteurs sur vos compteurs d'eau, gaz, mazout ou électricité, ou l'installation de capteurs de température dans vos locaux,
       <strong>Meters</strong> vous permet de suivre l'évolution de vos données.
     </p>
 
@@ -49,7 +49,7 @@
       Vos données sont accessibles en tout temps par une
       <strong>interface web moderne</strong>, utilisable sur smartphone, tablette et ordinateur.
       <br />Par la plateforme web, vous pouvez visionner des
-      <strong>graphiques</strong> de l'évolution de vos températures ou consommations.
+      <strong>graphiques</strong> de l'évolution de vos températures ou de votre consommation.
       <br />
       <a href="https://meters.ch" target="_blank">Se rendre sur la plateforme Meters</a>
     </p>
