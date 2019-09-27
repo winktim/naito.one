@@ -51,7 +51,7 @@
       <br />Par la plateforme web, vous pouvez visionner des
       <strong>graphiques</strong> de l'évolution de vos températures ou de votre consommation.
       <br />
-      <a href="https://meters.ch" target="_blank">Se rendre sur la plateforme Meters</a>
+      <a href="https://meters.ch" target="_blank" rel="noopener">Se rendre sur la plateforme Meters</a>
     </p>
 
     <div class="text-gray-100 bg-gray-700 p-4 rounded-sm shadow-md mb-4">
