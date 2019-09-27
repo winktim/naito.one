@@ -4,7 +4,7 @@ import glob from 'glob-all'
 const features = ['es2015', 'es2016', 'IntersectionObserver'].join('%2C')
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
    ** Headers of the page
    */
@@ -24,21 +24,12 @@ export default {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    noscript: [
-      {
-        innerHTML: 'This website requires JavaScript.',
-        body: true,
-      },
-    ],
-
     script: [
       {
         src: `https://polyfill.io/v3/polyfill.min.js?features=${features}`,
         body: true,
       },
     ],
-    // critical css
-    link: [{ rel: 'stylesheet', href: '/critical.css' }],
   },
   /*
    ** Customize the progress-bar color
@@ -59,10 +50,6 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: ['~/plugins/vue-i18n'],
-
-  router: {
-    middleware: 'client-data',
-  },
 
   /*
    ** Nuxt.js modules

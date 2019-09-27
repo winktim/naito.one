@@ -15,7 +15,12 @@
         </a>
       </li>
       <li class="mx-2">
-        <a class="action bg-naito-yellow-200 text-black" href="https://meters.ch" target="_blank">
+        <a
+          class="action bg-naito-yellow-200 text-black"
+          href="https://meters.ch"
+          target="_blank"
+          rel="noopener"
+        >
           <span v-text="$t('pages.meters.quick_access')"></span>
         </a>
       </li>
