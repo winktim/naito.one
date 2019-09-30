@@ -162,8 +162,8 @@
 </template>
 <script>
 import { noDecimalFormat, oneDecimalFormat } from '~/assets/utils'
-import en from '~/locales/en/meters'
-import fr from '~/locales/fr/meters'
+import en from '~/components/en/meters'
+import fr from '~/components/fr/meters'
 
 const content = {
   en,

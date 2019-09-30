@@ -4,8 +4,8 @@
   </section>
 </template>
 <script>
-import en from '~/locales/en/company'
-import fr from '~/locales/fr/company'
+import en from '~/components/en/company'
+import fr from '~/components/fr/company'
 
 const content = {
   en,
