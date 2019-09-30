@@ -116,7 +116,7 @@
 
     <p>
       Intéressés par le produit ? Vous pouvez utiliser l'outil ci-dessous pour
-      <strong>estimer le coût total, selon vos besoins</strong>.
+      <strong>estimer le coût total selon vos besoins</strong>.
       <i>
         <br />Veuillez noter que les prix affichés ci-dessous ne sont pas une offre et que les prix pratiqués peuvent différer.
         <br />Veuillez
