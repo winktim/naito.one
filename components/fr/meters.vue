@@ -24,7 +24,7 @@
       <i class="material-icons mr-4">eco</i>
       <span>
         Peut-être cherchez-vous à améliorer votre
-        <strong>image environmental</strong> ?
+        <strong>image environmentale</strong> ?
       </span>
     </div>
     <div
@@ -56,8 +56,8 @@
 
     <div class="text-gray-100 bg-gray-700 p-4 rounded-sm shadow-md mb-4">
       Maintenant, plus d'excuses.
-      <strong>Toutes les données sont sous vos yeux</strong>. Si il y a régulièrement une surconsommation d'eau
-      <i>le mardi entre 14h et 15h30</i>, vous le voyez. Il ne vous reste plus qu'à en déterminer la cause.
+      <strong>Toutes les données sont sous vos yeux</strong>. S'il y a régulièrement une surconsommation d'eau
+      <i>le mardi entre 14h et 15h30</i>, vous le voyez. Il ne vous reste plus qu'à déterminer la cause.
     </div>
 
     <p>
@@ -75,14 +75,14 @@
 
     <p>
       Difficile de définir des objectifs de réduction de consommation énergétique ? Grâce à
-      <strong>Meters</strong>, vous pouvez vous fixer un objectif concret mensuel ou hebdomadaire afin d'être tenu au courrant par email de vos avancées.
+      <strong>Meters</strong>, vous pouvez définir un objectif concret mensuel ou hebdomadaire afin d'être tenu au courant par email de vos avancées.
     </p>
 
     <h2>Alertes</h2>
 
     <p>
       Envie d'être averti lorsque la température d'un local est anormalement haute ou base ?
-      <strong>Meters</strong> vous mets a disposition un outils d'alertes email.
+      <strong>Meters</strong> vous met à disposition un outils d'alertes email.
     </p>
 
     <figure>
@@ -94,17 +94,17 @@
     <p>
       <strong>Meters</strong> a été conçu pour prendre en compte les
       <strong>petites entreprises</strong> comme les
-      <strong>grandes</strong>. Vous avez des ressources sur plusieurs sites ? Vous pourrez les retrouver sans problème au travers d'une recherche intélligente.
+      <strong>grandes</strong>. Vous avez des ressources sur plusieurs sites ? Vous pourrez les retrouver sans problème au travers d'une recherche intelligente.
     </p>
 
     <h2>Accès multiples</h2>
 
-    <p>Besoin d'accès pour plusieurs de vos employés ? Aucun problème. Ils auront chacun leur tableau de board, leurs alertes et leurs objectifs.</p>
+    <p>Besoin d'accès pour plusieurs de vos employés ? Aucun problème. Ils auront chacun leur tableau de bord, leurs alertes et leurs objectifs.</p>
 
     <h2>Wiki</h2>
 
     <p>
-      Pour tout savoir sur les fonctionnalitées de
+      Pour tout savoir sur les fonctionnalites de
       <strong>Meters</strong>, veuillez vous référer au Wiki
       <a
         :href="$store.getters.wikiUrl"
@@ -115,8 +115,8 @@
     <h2>Combien ça coûte</h2>
 
     <p>
-      Intéressés par le produit ? Vous pouvez utiliser l'outils ci-dessous pour
-      <strong>estimer le coût total selon vos besoins</strong>.
+      Intéressés par le produit ? Vous pouvez utiliser l'outil ci-dessous pour
+      <strong>estimer le coût total, selon vos besoins</strong>.
       <i>
         <br />Veuillez noter que les prix affichés ci-dessous ne sont pas une offre et que les prix pratiqués peuvent différer.
         <br />Veuillez

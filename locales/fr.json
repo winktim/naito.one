@@ -58,7 +58,7 @@
       "per_month": "CHF {amount} / mois",
       "then": "puis",
       "sensors": "pas de sondes | une sonde | {count} sondes",
-      "notice": "Seuls les compteurs équippés de la technologie M-BUS peuvent être relevés. Naito One ne propose pas de remplacer les compteurs dans ses prestations. Tout changement de compteur doit être entreprit par le client. Un réseau Wifi doit couvrir l'emplacement des capteurs. Naito One ne propose pas l'installation ou l'extension d'un réseau Wifi dans ses prestations. La mise en place du Wifi doit être entreprise par le client. Une prise domestique doit être disponible pour chaque capteur. Naito One ne propose pas l'installation ou l'extension d'installations électrique dans ses prestations. Le client doit s'assurer de la disponibilité des prises.",
+      "notice": "Seuls les compteurs équipés de la technologie M-BUS peuvent être relevés. Naito One ne propose pas de remplacer les compteurs dans ses prestations. Tout changement de compteur doit être entreprit par le client. Un réseau Wifi doit couvrir l'emplacement des capteurs. Naito One ne propose pas l'installation ou l'extension d'un réseau Wifi dans ses prestations. La mise en place du Wifi doit être entreprise par le client. Une prise domestique doit être disponible pour chaque capteur. Naito One ne propose pas l'installation ou l'extension d'installation électrique dans ses prestations. Le client doit s'assurer de la disponibilité des prises.",
       "discounts": {
         "hardware": "Rabais par sonde: CHF {amount}",
         "service": "Rabais par sonde par mois: CHF {amount}"
