@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <a ref="link" :href="wikiUrl">Wiki</a>
+  <div class="mt-8">
+    <a class="yellow-link" ref="link" :href="wikiUrl">Wiki</a>
   </div>
 </template>
 <script>
