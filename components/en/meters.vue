@@ -14,8 +14,9 @@
     >
       <i class="material-icons mr-4">trending_down</i>
       <span>
-        Vous avez du mal à
-        <strong>diminuer votre consommation</strong> d'eau, gaz, mazout ou encore électricité ?
+        Having trouble
+        <strong>decreasing</strong> your water, gas, oil or electricity
+        <strong>consumption</strong>?
       </span>
     </div>
     <div
@@ -23,8 +24,8 @@
     >
       <i class="material-icons mr-4">eco</i>
       <span>
-        Peut-être cherchez-vous à améliorer votre
-        <strong>image environmental</strong> ?
+        Maybe you are looking for a way to improve your
+        <strong>environmental image</strong>?
       </span>
     </div>
     <div
@@ -32,95 +33,92 @@
     >
       <i class="material-icons mr-4">notifications</i>
       <span>
-        Où alors vous souhaitez garder un oeil sur les
-        <strong>températures de vos locaux</strong> ?
+        Or maybe you want to keep an eye on the
+        <strong>temperature of your premises</strong>?
       </span>
     </div>
 
     <p>
-      <strong>Meters</strong> a été développé spécialement pour répondre à vos besoins !
-      <br />Après l'installation de capteurs sur vos compteurs d'eau, gaz, mazout ou électricité, ou l'installation de capteurs de température dans vos locaux,
-      <strong>Meters</strong> vous permet de suivre l'évolution de vos données.
+      <strong>Meters</strong> was developped to answer your needs!
+      <br />After installing sensors on your water, gas, oil or electricity meters, or installing temperature sensors in your premises,
+      <strong>Meters</strong> allows you to monitor your data.
     </p>
 
-    <h2>Exploration</h2>
+    <h2>Explore</h2>
 
     <p>
-      Vos données sont accessibles en tout temps par une
-      <strong>interface web moderne</strong>, utilisable sur smartphone, tablette et ordinateur.
-      <br />Par la plateforme web, vous pouvez visionner des
-      <strong>graphiques</strong> de l'évolution de vos températures ou de votre consommation.
+      Your data is accessible at any time through a
+      <strong>modern web interface</strong>, usable on smartphones, tablets and desktops.
+      <br />On the web platform, you can view
+      <strong>charts</strong> of the evolution of your temperatures or your consumption.
       <br />
-      <a href="https://meters.ch" target="_blank" rel="noopener">Se rendre sur la plateforme Meters</a>
+      <a href="https://meters.ch" target="_blank" rel="noopener">Get to the Meters platform</a>
     </p>
 
     <div class="text-gray-100 bg-gray-700 p-4 rounded-sm shadow-md mb-4">
-      Maintenant, plus d'excuses.
-      <strong>Toutes les données sont sous vos yeux</strong>. Si il y a régulièrement une surconsommation d'eau
-      <i>le mardi entre 14h et 15h30</i>, vous le voyez. Il ne vous reste plus qu'à en déterminer la cause.
+      No more excuses now.
+      <strong>You have access to all of the data</strong>. If there is an overconsumption of water
+      <i>every Tuesday between 14h and 15h30</i>, you see it. All that's left is to find the cause of it.
     </div>
 
     <p>
-      Vous pouvez
-      <strong>télécharger vos données</strong> dans différents formats afin de les analyser avec vos outils favoris, ou afin de les inclure dans des présentations.
-      <br />Un
-      <strong>tableau de bord</strong> vous permet de sauvegarder vos graphiques les plus utiles, afin d'y accéder en un rien de temps.
+      You can
+      <strong>download your data</strong> in different formats in order to analyse it with your favourite tools, or to include it in presentations.
+      <br />A
+      <strong>dashboard</strong> allows you to save your most useful charts for quick access.
     </p>
 
     <figure>
-      <img class="md:w-168" src="/images/meters-app-02.jpg" alt="Tableau de bord Meters" />
+      <img class="md:w-168" src="/images/meters-app-02.jpg" alt="Meters Dashboard" />
     </figure>
 
-    <h2>Objectifs</h2>
+    <h2>Objectives</h2>
 
     <p>
-      Difficile de définir des objectifs de réduction de consommation énergétique ? Grâce à
-      <strong>Meters</strong>, vous pouvez vous fixer un objectif concret mensuel ou hebdomadaire afin d'être tenu au courrant par email de vos avancées.
+      Is it hard to give yourself energy consumption objectives? Thanks to
+      <strong>Meters</strong>, you can define concrete objectives monthly or weekly in order to be kept up to date by email on your progress.
     </p>
 
-    <h2>Alertes</h2>
+    <h2>Alerts</h2>
 
     <p>
-      Envie d'être averti lorsque la température d'un local est anormalement haute ou base ?
-      <strong>Meters</strong> vous mets a disposition un outils d'alertes email.
+      You want to be alerted when the temperature of a premise gets abnormally high or low?
+      <strong>Meters</strong> provides you with an email alert tool.
     </p>
 
     <figure>
-      <img class="md:w-168" src="/images/meters-app-03.jpg" alt="Alertes Meters" />
+      <img class="md:w-168" src="/images/meters-app-03.jpg" alt="Meters Alerts" />
     </figure>
 
-    <h2>Pour les petits et les grands</h2>
+    <h2>For the big and small ones</h2>
 
     <p>
-      <strong>Meters</strong> a été conçu pour prendre en compte les
-      <strong>petites entreprises</strong> comme les
-      <strong>grandes</strong>. Vous avez des ressources sur plusieurs sites ? Vous pourrez les retrouver sans problème au travers d'une recherche intélligente.
+      <strong>Meters</strong> was conceived with
+      <strong>small companies</strong> as well as
+      <strong>big companies</strong> in mind. You have resources on multiple sites? You will be able to find them easily through an intelligent search.
     </p>
 
-    <h2>Accès multiples</h2>
+    <h2>Multi access</h2>
 
-    <p>Besoin d'accès pour plusieurs de vos employés ? Aucun problème. Ils auront chacun leur tableau de board, leurs alertes et leurs objectifs.</p>
+    <p>You need accesses for multiple of your employes? No problem. They will each have their dashboard, alerts and objectives.</p>
 
     <h2>Wiki</h2>
 
     <p>
-      Pour tout savoir sur les fonctionnalitées de
-      <strong>Meters</strong>, veuillez vous référer au Wiki
-      <a
-        :href="$store.getters.wikiUrl"
-        target="_blank"
-      >en cliquant ici</a>.
+      To lean all there is to know about the features of
+      <strong>Meters</strong>, head to the Wiki
+      <a :href="$store.getters.wikiUrl" target="_blank">by clicking here</a>.
     </p>
 
-    <h2>Combien ça coûte</h2>
+    <h2>How much does it cost</h2>
 
     <p>
-      Intéressés par le produit ? Vous pouvez utiliser l'outils ci-dessous pour
-      <strong>estimer le coût total selon vos besoins</strong>.
+      Interested in the product? You can use the tool below to
+      <strong>estimate the total cost for your specific needs</strong>.
       <i>
-        <br />Veuillez noter que les prix affichés ci-dessous ne sont pas une offre et que les prix pratiqués peuvent différer.
-        <br />Veuillez
-        <a href="mailto:hello@naito.one">prendre contact avec nous</a> pour obtenir une offre complète.
+        <br />Please note that the prices shown below do not count as a quotation and that actual prices may vary.
+        <br />Please
+        <a href="mailto:hello@naito.one">get in touch</a> to get a complete quotation.
       </i>
     </p>
   </div>
