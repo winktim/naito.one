@@ -22,6 +22,7 @@ export default {
         name: 'description',
         content: 'Swiss company creating innovative IT solutions',
       },
+      { hid: 'theme-color', name: 'theme-color', content: '#212121' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     script: [
