@@ -175,8 +175,8 @@ $reveal-time: 3s;
 // Ugly fix to an ugly bug in IE. some element must have the wrong calculated height
 // but I can't find which one, so I'll just add padding to the bottom
 // Fuck you IE
-// https://browserstrangeness.github.io/css_hacks.html
-// Internet Explorer 11- (All but ie8)
+// https://stackoverflow.com/questions/18907131/detecting-ie11-using-css-capability-feature-detection#27315792
+// IE 9 and above
 @media screen and (min-width: 0\0) and (min-resolution: +72dpi) {
   main {
     padding-bottom: 200px !important;
