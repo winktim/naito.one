@@ -1,13 +1,17 @@
 <template>
-  <section class="mt-4">
-    <h1 class="font-heading text-white text-5xl text-center" v-text="title"></h1>
-    <p>
-      Merci de votre intérêt. Naito One ne cherchera
-      <strong>pas de nouveaux collaborateurs en 2019</strong>.
-    </p>
+  <section class="mt-4 marked">
+    <component :is="localeContent"></component>
   </section>
 </template>
 <script>
+import en from '~/components/en/jobs'
+import fr from '~/components/fr/jobs'
+
+const content = {
+  en,
+  fr,
+}
+
 export default {
   head() {
     return {
@@ -32,6 +36,9 @@ export default {
   computed: {
     title() {
       return this.$t('pages.jobs.title')
+    },
+    localeContent() {
+      return content[this.$i18n.locale]
     },
   },
 }
