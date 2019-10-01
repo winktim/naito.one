@@ -6,7 +6,7 @@
       <caption>This is a faithful translation. In case of discrepancies, the French version is applied.</caption>
     </figure>
 
-    <h2>Conditions d'utilisation</h2>
+    <h2>Terms of use</h2>
 
     <p>The "Naito One" website is operated by the Naito One Winkelmann company.</p>
 
