@@ -33,7 +33,6 @@ export default {
       ],
     }
   },
-  components: { en, fr },
   computed: {
     title() {
       return this.$t('pages.company.title')
