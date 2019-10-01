@@ -43,8 +43,3 @@ export default {
   },
 }
 </script>
-<style lang="scss">
-#human-picture {
-  background-image: url(/images/human.jpg);
-}
-</style>
