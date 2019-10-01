@@ -1,10 +1,17 @@
 <template>
-  <section class="mt-4">
-    <h1 class="font-heading text-white text-5xl text-center" v-text="title"></h1>
-    <p class="pl-4">Ce contenu est en cours de création. Merci de repasser plus tard.</p>
+  <section class="mt-4 marked">
+    <component :is="localeContent"></component>
   </section>
 </template>
 <script>
+import en from '~/components/en/contact'
+import fr from '~/components/fr/contact'
+
+const content = {
+  en,
+  fr,
+}
+
 export default {
   head() {
     return {
@@ -29,6 +36,9 @@ export default {
   computed: {
     title() {
       return this.$t('pages.contact.title')
+    },
+    localeContent() {
+      return content[this.$i18n.locale]
     },
   },
 }
