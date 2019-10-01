@@ -28,7 +28,7 @@
       "description_line_2": "fondée en 2019",
       "services": {
         "meters": {
-          "description": "Meters est un service qui vous aide à gérer la consommation énergétique de votre entreprise ainsi que vos températures.",
+          "description": "Meters est un service qui vous aide à gérer la consommation énergétique de votre entreprise ainsi que les températures de vos locaux.",
           "discover": "Découvrir Meters"
         }
       }

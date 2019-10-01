@@ -24,7 +24,7 @@
       <i class="material-icons mr-4">eco</i>
       <span>
         Peut-être cherchez-vous à améliorer votre
-        <strong>image environmentale</strong> ?
+        <strong>image environnementale</strong> ?
       </span>
     </div>
     <div
@@ -32,7 +32,7 @@
     >
       <i class="material-icons mr-4">notifications</i>
       <span>
-        Où alors vous souhaitez garder un oeil sur les
+        Ou alors vous souhaitez garder un oeil sur les
         <strong>températures de vos locaux</strong> ?
       </span>
     </div>

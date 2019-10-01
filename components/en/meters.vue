@@ -52,13 +52,13 @@
       <br />On the web platform, you can view
       <strong>charts</strong> of the evolution of your temperatures or your consumption.
       <br />
-      <a href="https://meters.ch" target="_blank" rel="noopener">Get to the Meters platform</a>
+      <a href="https://meters.ch" target="_blank" rel="noopener">Go to the Meters platform</a>
     </p>
 
     <div class="text-gray-100 bg-gray-700 p-4 rounded-sm shadow-md mb-4">
       No more excuses now.
       <strong>You have access to all of the data</strong>. If there is an overconsumption of water
-      <i>every Tuesday between 14h and 15h30</i>, you see it. All that's left is to find the cause of it.
+      <i>every Tuesday between 14h and 15h30</i>, you see it. All there's left is to find the cause of it.
     </div>
 
     <p>
@@ -105,7 +105,7 @@
     <h2>Wiki</h2>
 
     <p>
-      To lean all there is to know about the features of
+      To learn all there is to know about the features of
       <strong>Meters</strong>, head to the Wiki
       <a :href="$store.getters.wikiUrl" target="_blank">by clicking here</a>.
     </p>
@@ -118,7 +118,7 @@
       <i>
         <br />Please note that the prices shown below do not count as a quotation and that actual prices may vary.
         <br />Please
-        <a href="mailto:hello@naito.one">get in touch</a> to get a complete quotation.
+        <a href="mailto:hello@naito.one">get in touch</a> to recieve a complete quotation for free.
       </i>
     </p>
   </div>

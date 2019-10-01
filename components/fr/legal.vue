@@ -13,7 +13,7 @@
     <p>Ce site peut contenir des liens hypertexte menant à des sites Internet non gérés par Naito One. Naito One ne peut garantir leur sécurité ou leur intégrité. Visitez ces sites à vos propres risques.</p>
 
     <h3>Propriété intellectuelle</h3>
-    <p>Les images présentes sur le site sont soit dans le domaine public, soit la propriété de l'entreprise Naito One, à l'exception des logos de nos clients, qui sont la propriété de leurs auteurs respectifs.</p>
+    <p>Les images présentes sur le site sont soit dans le domaine public, soit la propriété de l'entreprise Naito One, à l'exception des logos de nos clients et des images spécialement annotées, qui sont la propriété de leurs auteurs respectifs.</p>
 
     <h3>Aucune garantie</h3>
     <p>
@@ -48,7 +48,7 @@
     </p>
 
     <h3>Sécurité</h3>
-    <p>Nous prenons la sécurité de vos données et de votre utilisation du service très au sérieux. Nous suivons les dernières recommandations en terme de sécurité sur Internet et maintenons constamment nos services à jour.</p>
+    <p>Nous prenons la sécurité de vos données et de votre utilisation du service très au sérieux. Nous suivons les dernières recommandations en matière de sécurité sur Internet et maintenons constamment nos services à jour.</p>
     <p>
       Si vous avez découvert un problème de sécurité vous pouvez nous contacter à
       <a

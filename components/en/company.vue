@@ -16,7 +16,7 @@
       </caption>
     </figure>
 
-    <p>Our goal is to provide intelligent and useful services and products, at first for companies, but ultimately also for private clients.</p>
+    <p>Our goal is to provide intelligent and useful services and products, at first for companies, but also for private clients in the future.</p>
 
     <p>
       Our company has for objective to satisfy both it's clients and it's employes. For that purpose, we also innovate in the domain of work environment.

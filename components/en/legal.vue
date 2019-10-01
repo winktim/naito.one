@@ -14,7 +14,7 @@
     <p>This website might include hypertext links to other websites on the Internet that are not managed by Naito One. Naito One cannot guarantee the safety and integrity of thoses websites. Visit theses sites at your own risks.</p>
 
     <h3>Intellectual property</h3>
-    <p>Images on this website are either in the public domain, or the property of the Naito One company, except the logos of our clients, which are the property of their respective authors.</p>
+    <p>Images on this website are either in the public domain, or the property of the Naito One company, except the logos of our clients, or specifically annotated images, which are the property of their respective authors.</p>
 
     <h3>No guarantee</h3>
     <p>
