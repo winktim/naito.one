@@ -1,3 +1,8 @@
+// fix wierd IE and edge body overscroll
+body {
+  overflow: hidden;
+}
+
 input,
 button,
 select {
@@ -155,9 +160,25 @@ $reveal-time: 3s;
   background-repeat: no-repeat;
   background-size: cover;
 
-  animation: move-banner 10s alternate-reverse infinite ease-in-out;
+  // https://browserstrangeness.github.io/css_hacks.html
+  // Any non-Microsoft modern browsers (Safari 9+, Chrome 28+, Firefox 22+)
+  @supports (not (-ms-ime-align: auto)) {
+    // disable animation in edge and ie
+    animation: move-banner 10s alternate-reverse infinite ease-in-out;
+  }
 }
 
 #human-picture {
   background-image: url(/images/human.jpg);
+}
+
+// Ugly fix to an ugly bug in IE. some element must have the wrong calculated height
+// but I can't find which one, so I'll just add padding to the bottom
+// Fuck you IE
+// https://browserstrangeness.github.io/css_hacks.html
+// Internet Explorer 11- (All but ie8)
+@media screen and (min-width: 0\0) and (min-resolution: +72dpi) {
+  main {
+    padding-bottom: 200px !important;
+  }
 }
