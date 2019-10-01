@@ -118,7 +118,7 @@
       Intéressés par le produit ? Vous pouvez utiliser l'outil ci-dessous pour
       <strong>estimer le coût total selon vos besoins</strong>.
       <i>
-        <br />Veuillez noter que les prix affichés ci-dessous ne sont pas une offre et que les prix pratiqués peuvent différer.
+        <br />Veuillez noter que les prix affichés ci-dessous ne constituent pas une offre et que les prix pratiqués peuvent différer.
         <br />Veuillez
         <a href="mailto:hello@naito.one">prendre contact avec nous</a> pour obtenir une offre complète.
       </i>
