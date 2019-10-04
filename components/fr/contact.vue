@@ -37,9 +37,9 @@
     <figure>
       <img class="md:w-168" src="/images/delemont.jpg" alt="Photo de Delémont, Jura" />
       <caption>
-        Par
+        Image par
         <a href="https://commons.wikimedia.org/wiki/User:Jeremy.toma">Jeremy.toma</a> —
-        <span>Travail personnel</span>,
+        <span>Licence</span>
         <a
           href="https://creativecommons.org/licenses/by-sa/4.0"
           title="Creative Commons Attribution-Share Alike 4.0"
