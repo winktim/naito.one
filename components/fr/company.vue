@@ -11,7 +11,7 @@
     <figure>
       <img class="md:w-72" src="/images/human.jpg" alt="Photo du directeur" />
       <caption>
-        Tim Winkelmann,
+        Tim Winkelmann, Informaticien
         <br />Directeur Naito One
       </caption>
     </figure>

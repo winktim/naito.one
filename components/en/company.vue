@@ -11,7 +11,7 @@
     <figure>
       <img class="md:w-72" src="/images/human.jpg" alt="Photo of the CEO" />
       <caption>
-        Tim Winkelmann,
+        Tim Winkelmann, IT specialist
         <br />CEO Naito One
       </caption>
     </figure>
