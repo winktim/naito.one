@@ -149,7 +149,11 @@
         ></a>
       </div>
 
-      <p class="text-gray-400 text-sm" v-text="$t('pages.meters.notice')"></p>
+      <h2 class="font-heading text-naito-green-100 text-4xl" v-text="$t('pages.meters.clients')"></h2>
+
+      <clients></clients>
+
+      <p class="text-gray-400 text-sm mt-16" v-text="$t('pages.meters.notice')"></p>
     </section>
     <a
       :href="`mailto:hello@naito.one?subject=${$t('pages.meters.demo_access_email_subject')}`"
@@ -162,6 +166,7 @@
 </template>
 <script>
 import { noDecimalFormat, oneDecimalFormat } from '~/assets/utils'
+import Clients from '~/components/clients'
 import en from '~/components/en/meters'
 import fr from '~/components/fr/meters'
 
@@ -191,6 +196,7 @@ export default {
       ],
     }
   },
+  components: { Clients },
   data() {
     return {
       numTempSensors: 1,
