@@ -16,6 +16,14 @@ export function getNavigatorLanguage() {
 }
 
 /**
+ * Scroll an element to it's top
+ * @param {HTMLElement} el
+ */
+export function scrollToTop(el) {
+  el.scrollTop = 0
+}
+
+/**
  * Map from the simple language local to the full locale for number formatting
  */
 export const numberLocale = {

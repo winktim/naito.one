@@ -1,5 +1,8 @@
 <template>
-  <div class="background-image font-content w-screen h-screen flex overflow-x-hidden">
+  <div
+    ref="scroller"
+    class="background-image font-content w-screen h-screen flex overflow-x-hidden"
+  >
     <sidebar></sidebar>
     <div class="flex-grow flex flex-col md:pl-64 w-full">
       <appbar></appbar>
@@ -16,6 +19,7 @@ import Appbar from '../components/appbar.vue'
 import Sidebar from '../components/sidebar.vue'
 
 import clientData from '../middleware/client-data'
+import { scrollToTop } from '../assets/utils'
 export default {
   components: {
     Appbar,
@@ -88,6 +92,12 @@ export default {
 
     document.body.addEventListener('touchstart', lock, { capture: false })
     document.body.addEventListener('touchend', move, { capture: false })
+  },
+  watch: {
+    $route() {
+      // make sure the page is scrolled to the top
+      scrollToTop(this.$refs.scroller)
+    },
   },
 }
 </script>
