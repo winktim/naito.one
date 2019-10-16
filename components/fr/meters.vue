@@ -112,7 +112,7 @@
       >en cliquant ici</a>.
     </p>
 
-    <h2>Parmis nos clients</h2>
+    <h2>Parmi nos clients</h2>
 
     <clients></clients>
 
