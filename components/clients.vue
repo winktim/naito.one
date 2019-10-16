@@ -3,7 +3,7 @@
     <!-- Steulet SA -->
     <li class="flex flex-col items-center m-4">
       <div class="flex flex-col items-center mb-6">
-        <h3 class="text-naito-yellow-100 font-heading text-xl">Pierre Steulet SA, 2802 Develier</h3>
+        <h4 class="text-naito-yellow-100 font-heading text-xl">Pierre Steulet SA, 2802 Develier</h4>
         <!--<p class="italic">"Et ici la success story quand elle existera."</p>-->
       </div>
       <img
