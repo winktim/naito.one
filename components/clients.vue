@@ -1,5 +1,5 @@
 <template>
-  <ul class="flex flex-wrap justify-center w-full my-4">
+  <ul class="flex flex-wrap justify-center w-full mb-4">
     <!-- Steulet SA -->
     <li class="flex flex-col items-center m-4">
       <div class="flex flex-col items-center mb-6">
