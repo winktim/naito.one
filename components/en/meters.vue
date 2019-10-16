@@ -110,6 +110,10 @@
       <a :href="$store.getters.wikiUrl" target="_blank">by clicking here</a>.
     </p>
 
+    <h2>Our clients include</h2>
+
+    <clients></clients>
+
     <h2>How much does it cost</h2>
 
     <p>
@@ -123,3 +127,9 @@
     </p>
   </div>
 </template>
+<script>
+import Clients from '~/components/clients'
+export default {
+  components: { Clients },
+}
+</script>

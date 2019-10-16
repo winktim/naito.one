@@ -112,6 +112,10 @@
       >en cliquant ici</a>.
     </p>
 
+    <h2>Parmis nos clients</h2>
+
+    <clients></clients>
+
     <h2>Combien ça coûte</h2>
 
     <p>
@@ -125,3 +129,9 @@
     </p>
   </div>
 </template>
+<script>
+import Clients from '~/components/clients'
+export default {
+  components: { Clients },
+}
+</script>
