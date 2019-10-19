@@ -124,7 +124,7 @@
       <i>
         <br />Veuillez noter que les prix affichés ci-dessous ne constituent pas une offre et que les prix pratiqués peuvent différer.
         <br />Veuillez
-        <a href="mailto:hello@naito.one">prendre contact avec nous</a> pour obtenir une offre complète.
+        <a href="mailto:hello@naito.one">prendre contact avec nous</a> pour obtenir une offre complète gratuitement.
       </i>
     </p>
   </div>
