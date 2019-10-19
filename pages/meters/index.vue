@@ -116,10 +116,16 @@
           :title="$t('pages.meters.discounts_explained.hardware')"
         ></span>
         <span
-          v-if="(serviceDiscountSoftwarePlan + serviceDiscountHardwarePlan) < 0"
+          v-if="serviceDiscountYearsPlan < 0"
           class="title-on-click text-sm my-1 mx-2 py-2 px-4 rounded-full bg-gray-700 text-gray-100 font-bold hover-action"
-          v-text="$t('pages.meters.discounts.service', {amount: -serviceDiscountSoftwarePlan - serviceDiscountHardwarePlan})"
+          v-text="$t('pages.meters.discounts.service', {amount: -serviceDiscountYearsPlan})"
           :title="$t('pages.meters.discounts_explained.service')"
+        ></span>
+        <span
+          v-if="serviceDiscountGlobalPercentage > 0"
+          class="title-on-click text-sm my-1 mx-2 py-2 px-4 rounded-full bg-gray-700 text-gray-100 font-bold hover-action"
+          v-text="$t('pages.meters.discounts.global_service', {amount: (serviceDiscountGlobalPercentage * 100).toFixed(0) })"
+          :title="$t('pages.meters.discounts_explained.global_service')"
         ></span>
       </div>
 
@@ -245,30 +251,25 @@ export default {
     sensorDiscount() {
       return this.sensorDiscountPlan * this.totalSensors
     },
-    serviceDiscountSoftwarePlan() {
+    serviceDiscountYearsPlan() {
       return Number(this.serviceYears) < 2
         ? 0
         : Number(this.serviceYears) < 3
         ? -1
         : -1.5
     },
-    serviceDiscountSoftware() {
+    serviceDiscountYears() {
       return (
-        this.serviceDiscountSoftwarePlan * this.totalSensors * this.totalMonths
+        this.serviceDiscountYearsPlan * this.totalSensors * this.totalMonths
       )
     },
-    serviceDiscountHardwarePlan() {
-      return this.totalSensors < 3
-        ? 0
-        : this.totalSensors < 6
-        ? -1
-        : this.totalSensors < 12
-        ? -1.5
-        : -2
+    serviceDiscountGlobalPercentage() {
+      return (1 - Math.pow(0.95, this.totalSensors / 1.5)) * 0.95
     },
-    serviceDiscountHardware() {
+    serviceDiscountGlobal() {
       return (
-        this.serviceDiscountHardwarePlan * this.totalSensors * this.totalMonths
+        this.serviceDiscountGlobalPercentage *
+        -(this.serviceCost + this.serviceDiscountYears)
       )
     },
 
@@ -283,8 +284,8 @@ export default {
     serviceCostPerMonth() {
       return (
         (this.serviceCost +
-          this.serviceDiscountSoftware +
-          this.serviceDiscountHardware) /
+          this.serviceDiscountYears +
+          this.serviceDiscountGlobal) /
         this.totalMonths
       ).toLocaleString(this.$numberLocale, oneDecimalFormat)
     },

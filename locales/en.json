@@ -61,11 +61,13 @@
       "notice": "Only meters eqquiped with the M-BUS technology can be read from. Naito One does not offer the replacement of the meters in it's services. Any change must be undertaken by the client. A Wifi network must cover the location of the sensors. Naito One does not offer the installation or extension of Wifi networks in it's services. The update of the network must be undertaken by the client. A household outlet must be available for each sensor. Naito One does not offer the installation or extensoin of electrical installations in it's services. The client must ensure the availability of power outlets.",
       "discounts": {
         "hardware": "Discount per sensor: CHF {amount}",
-        "service": "Discount per sensor per month: CHF {amount}"
+        "service": "Discount per sensor per month: CHF {amount}",
+        "global_service": "Global service discount: {amount}%"
       },
       "discounts_explained": {
         "hardware": "The more sensors you buy, the cheaper they get.",
-        "service": "A discount per sensor per month is given if the contract is signed for more than a year, and the more sensors you buy, the cheaper they get per month."
+        "service": "A discount per sensor per month is given if the contract is signed for more than a year.",
+        "global_service": "The more sensors you buy, the cheaper the service gets per month."
       },
       "years": {
         "service_duration": "How many years do you wish to pay at once?",
