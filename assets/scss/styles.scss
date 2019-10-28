@@ -155,7 +155,8 @@ $reveal-time: 3s;
 }
 
 #meters-banner {
-  background-image: url(/images/meters-app-01-small.jpg);
+  background-color: #b9b4ad;
+  background-image: url(/images/meters-app-01-placeholder.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,6 +166,11 @@ $reveal-time: 3s;
   @supports (not (-ms-ime-align: auto)) {
     // disable animation in edge and ie
     animation: move-banner 10s alternate-reverse infinite ease-in-out;
+  }
+
+  // don't load high res image on mobile
+  @media only screen and (min-device-width: 768px) {
+    background-image: url(/images/meters-app-01-small.jpg);
   }
 }
 
