@@ -96,6 +96,11 @@
 .range-slider__range {
   @apply bg-naito-green-200 w-full appearance-none h-4 rounded-lg outline-none p-0 m-0 mt-2;
 
+  &::-moz-range-track {
+    // Firefox Mobile Fix
+    background-color: transparent;
+  }
+
   // Range Handle
   &::-webkit-slider-thumb {
     @apply w-6 h-6 rounded-full bg-gray-300 cursor-pointer appearance-none transition-background-100;
@@ -123,7 +128,8 @@
 
   // Focus state
   &:focus {
-    &::-webkit-slider-thumb {
+    &::-webkit-slider-thumb,
+    &::-moz-range-thumb {
       box-shadow: 0 0 0 3px theme('colors.gray.900'),
         0 0 0 6px theme('colors.gray.100');
     }
