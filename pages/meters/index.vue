@@ -243,7 +243,7 @@ export default {
       return this.totalMonths * this.totalSensors * 10
     },
     installCost() {
-      return this.totalSensors > 0 ? 240 + (this.totalSensors - 1) * 80 : 0
+      return this.totalSensors > 0 ? 240 + (this.totalSensors - 1) * 40 : 0
     },
     sensorDiscountPlan() {
       return this.totalSensors < 5 ? 0 : this.totalSensors < 10 ? -10 : -20
