@@ -1,7 +1,11 @@
 <template>
   <div>
     <section class="flex flex-col items-center">
-      <img src="/images/naito-colored.svg" :alt="$t('alt.naito_one_logo')" class="h-40" />
+      <img
+        src="/images/naito-colored.svg"
+        :alt="$t('alt.naito_one_logo')"
+        class="h-40"
+      />
       <h1 class="font-heading text-5xl">Naito.One</h1>
       <p class="text-center text-gray-200">
         <span v-text="$t('pages.index.description_line_1')"></span>
@@ -18,8 +22,14 @@
 
     <section class="mt-4">
       <h2 class="font-heading text-naito-green-100 text-4xl pl-4">Meters</h2>
-      <p class="pl-4" v-text="$t('pages.index.services.meters.description')"></p>
-      <div id="meters-image-outer" class="relative rounded shadow h-64 mt-8 overflow-hidden">
+      <p
+        class="pl-4"
+        v-text="$t('pages.index.services.meters.description')"
+      ></p>
+      <div
+        id="meters-image-outer"
+        class="relative rounded shadow h-64 mt-8 overflow-hidden"
+      >
         <nuxt-link
           class="absolute simple-action rounded-md px-6 sm:px-8 py-4 sm:py-6 bg-naito-green-200 w-2/3 sm:w-auto z-10"
           to="/meters"
@@ -35,6 +45,14 @@
         ></div>
       </div>
     </section>
+
+    <!-- Matomo Image Tracker-->
+    <img
+      src="https://analytics.naito.one/matomo.php?idsite=1&amp;rec=1&amp;action_name=Index"
+      style="border:0"
+      alt
+    />
+    <!-- End Matomo -->
   </div>
 </template>
 <script>

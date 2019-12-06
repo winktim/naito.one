@@ -12,10 +12,6 @@
         <nuxt />
       </main>
     </div>
-
-    <!-- Matomo Image Tracker-->
-    <img src="https://analytics.naito.one/matomo.php?idsite=1&amp;rec=1" style="border:0" alt />
-    <!-- End Matomo -->
   </div>
 </template>
 <script>
@@ -105,4 +101,3 @@ export default {
   },
 }
 </script>
-
