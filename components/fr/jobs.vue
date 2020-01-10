@@ -2,8 +2,8 @@
   <div lang="fr">
     <h1>Emplois</h1>
     <p>
-      Merci de votre intérêt. Naito One ne cherchera
-      <strong>pas de nouveaux collaborateurs en 2019</strong>.
+      Merci de votre intérêt. Naito One ne cherche
+      <strong>actuellement pas de nouveaux collaborateurs</strong>.
     </p>
     <figure>
       <img src="/images/elevator.jpg" alt="Élévateur" />

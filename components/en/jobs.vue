@@ -3,7 +3,7 @@
     <h1>Jobs</h1>
     <p>
       Thank your for your interest. Naito One
-      <strong>won't be looking for new collaborators in 2019</strong>.
+      <strong>is not currently looking for new collaborators</strong>.
     </p>
     <figure>
       <img src="/images/elevator.jpg" alt="Elevator" />
