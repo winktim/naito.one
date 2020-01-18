@@ -55,7 +55,9 @@
       <li>Quelle page vous avez visité</li>
       <li>
         Votre
-        <a href="https://en.wikipedia.org/wiki/User_agent#Use_in_HTTP"
+        <a
+          href="https://en.wikipedia.org/wiki/User_agent#Use_in_HTTP"
+          rel="noopener"
           >Agent Utilisateur</a
         >
       </li>
@@ -81,13 +83,13 @@
     <h3>Tierces</h3>
     <p>
       Notre site charge un script depuis le service
-      <a href="https://polyfill.io">Polyfill.io</a> afin de garantir la
-      rétro-compabibilité des navigateurs.
+      <a href="https://polyfill.io" rel="noopener">Polyfill.io</a> afin de
+      garantir la rétro-compabibilité des navigateurs.
     </p>
     <p>
       Notre site est hébergé sur les serveurs de
-      <a href="https://github.com">Github</a>. De ce fait, ils sont susceptibles
-      de journaliser vos visites pendant un certain temps.
+      <a href="https://github.com" rel="noopener">Github</a>. De ce fait, ils
+      sont susceptibles de journaliser vos visites pendant un certain temps.
     </p>
 
     <h3>Sécurité</h3>

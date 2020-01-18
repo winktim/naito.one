@@ -3,7 +3,10 @@
     <h1>Contact</h1>
 
     <h2>Comment nous atteindre</h2>
-    <p>Nous préférons le contact par email initialement. Voici les adresses auquels vous pouvez nous joindre.</p>
+    <p>
+      Nous préférons le contact par email initialement. Voici les adresses
+      auquels vous pouvez nous joindre.
+    </p>
 
     <ul>
       <li class="flex flex-col mb-2">
@@ -32,19 +35,35 @@
     <h2>Où nous trouver</h2>
     <p>
       Notre siège social se trouve au Jura, Suisse.
-      <br />Lorsque nos locaux seront prêts à accueilir nos clients, nous ajouterons des informations ici.
+      <br />Lorsque nos locaux seront prêts à accueilir nos clients, nous
+      ajouterons des informations ici.
     </p>
     <figure>
-      <img class="md:w-168" src="/images/delemont.jpg" alt="Photo de Delémont, Jura" />
+      <img
+        class="md:w-168"
+        src="/images/delemont.jpg"
+        alt="Photo de Delémont, Jura"
+      />
       <caption>
         Image par
-        <a href="https://commons.wikimedia.org/wiki/User:Jeremy.toma">Jeremy.toma</a> —
+        <a
+          href="https://commons.wikimedia.org/wiki/User:Jeremy.toma"
+          rel="noopener"
+          >Jeremy.toma</a
+        >
+        —
         <span>Licence</span>
         <a
           href="https://creativecommons.org/licenses/by-sa/4.0"
           title="Creative Commons Attribution-Share Alike 4.0"
-        >CC BY-SA 4.0</a>,
-        <a href="https://commons.wikimedia.org/w/index.php?curid=71575228">Lien</a>
+          rel="noopener"
+          >CC BY-SA 4.0</a
+        >,
+        <a
+          href="https://commons.wikimedia.org/w/index.php?curid=71575228"
+          rel="noopener"
+          >Lien</a
+        >
       </caption>
     </figure>
   </div>

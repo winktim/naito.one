@@ -3,7 +3,10 @@
     <h1>Contact</h1>
 
     <h2>How to get in touch</h2>
-    <p>We prefer being contacted initially by email. Here are the addresses you can use to get in touch.</p>
+    <p>
+      We prefer being contacted initially by email. Here are the addresses you
+      can use to get in touch.
+    </p>
 
     <ul>
       <li class="flex flex-col mb-2">
@@ -32,19 +35,35 @@
     <h2>Where to find us</h2>
     <p>
       Our head office is in Jura, Switzerland.
-      <br />When our office is ready to recieve our clients, we will add information here.
+      <br />When our office is ready to recieve our clients, we will add
+      information here.
     </p>
     <figure>
-      <img class="md:w-168" src="/images/delemont.jpg" alt="Picture of Delémont, Jura" />
+      <img
+        class="md:w-168"
+        src="/images/delemont.jpg"
+        alt="Picture of Delémont, Jura"
+      />
       <caption>
         Image by
-        <a href="https://commons.wikimedia.org/wiki/User:Jeremy.toma">Jeremy.toma</a> —
+        <a
+          href="https://commons.wikimedia.org/wiki/User:Jeremy.toma"
+          rel="noopener"
+          >Jeremy.toma</a
+        >
+        —
         <span>License</span>
         <a
           href="https://creativecommons.org/licenses/by-sa/4.0"
           title="Creative Commons Attribution-Share Alike 4.0"
-        >CC BY-SA 4.0</a>,
-        <a href="https://commons.wikimedia.org/w/index.php?curid=71575228">Link</a>
+          rel="noopener"
+          >CC BY-SA 4.0</a
+        >,
+        <a
+          href="https://commons.wikimedia.org/w/index.php?curid=71575228"
+          rel="noopener"
+          >Link</a
+        >
       </caption>
     </figure>
   </div>
