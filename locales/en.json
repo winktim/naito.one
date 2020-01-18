@@ -58,7 +58,7 @@
       "per_month": "CHF {amount} / month",
       "then": "then",
       "sensors": "no sensors | one sensor | {count} sensors",
-      "notice": "Only meters eqquiped with the M-BUS or SCR+ technology can be read from. Naito One does not offer the replacement of the meters in it's services. Any change must be undertaken by the client. A Wifi network must cover the location of the sensors. Naito One does not offer the installation or extension of Wifi networks in it's services. The update of the network must be undertaken by the client. A household outlet must be available for each sensor. Naito One does not offer the installation or extensoin of electrical installations in it's services. The client must ensure the availability of power outlets.",
+      "notice": "Only meters eqquiped with the M-BUS, SCR+ or IEC 62056-21 technology can be read from. Naito One does not offer the replacement of the meters in it's services. Any change must be undertaken by the client. A Wifi network must cover the location of the sensors. Naito One does not offer the installation or extension of Wifi networks in it's services. The update of the network must be undertaken by the client. A household outlet must be available for each sensor. Naito One does not offer the installation or extensoin of electrical installations in it's services. The client must ensure the availability of power outlets.",
       "discounts": {
         "hardware": "Discount per sensor: CHF {amount}",
         "service": "Discount per sensor per month: CHF {amount}",
