@@ -298,7 +298,7 @@ export default {
       return Number(this.numMbusSensors) * 150
     },
     serviceCost() {
-      return this.totalMonths * this.totalSensors * 10
+      return this.totalMonths * this.totalSensors * 7
     },
     installCost() {
       return this.totalSensors > 0 ? 240 + (this.totalSensors - 1) * 40 : 0
@@ -313,8 +313,8 @@ export default {
       return Number(this.serviceYears) < 2
         ? 0
         : Number(this.serviceYears) < 3
-        ? -1
-        : -1.5
+        ? -1.5
+        : -2.5
     },
     serviceDiscountYears() {
       return (
@@ -322,7 +322,7 @@ export default {
       )
     },
     serviceDiscountGlobalPercentage() {
-      return (1 - Math.pow(0.95, this.totalSensors / 1.5)) * 0.95
+      return (1 - Math.pow(0.95, this.totalSensors / 1.5)) * 0.6
     },
     serviceDiscountGlobal() {
       return (
