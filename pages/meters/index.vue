@@ -11,10 +11,7 @@
           <div class="flex flex-col lg:flex-row">
             <!-- 3 -->
             <div class="flex items-center">
-              <label
-                class="material-radio text-naito-green-100"
-                for="service-three-input"
-              >
+              <label class="material-radio text-naito-green-100" for="service-three-input">
                 <input
                   type="radio"
                   id="service-three-input"
@@ -33,10 +30,7 @@
 
             <!-- 2 -->
             <div class="flex items-center">
-              <label
-                class="material-radio text-naito-green-100"
-                for="service-two-input"
-              >
+              <label class="material-radio text-naito-green-100" for="service-two-input">
                 <input
                   type="radio"
                   id="service-two-input"
@@ -55,10 +49,7 @@
 
             <!-- 1 -->
             <div class="flex items-center">
-              <label
-                class="material-radio text-naito-green-100"
-                for="service-one-input"
-              >
+              <label class="material-radio text-naito-green-100" for="service-one-input">
                 <input
                   type="radio"
                   id="service-one-input"
@@ -76,10 +67,7 @@
             </div>
           </div>
           <!-- temp -->
-          <label
-            for="num-temp-sensors"
-            v-text="$t('pages.meters.how_many_temp')"
-          ></label>
+          <label for="num-temp-sensors" v-text="$t('pages.meters.how_many_temp')"></label>
           <div class="flex items-center mb-2">
             <div class="range-slider flex-grow">
               <input
@@ -102,10 +90,7 @@
             ></span>
           </div>
           <!-- mbus -->
-          <label
-            for="num-mbus-sensors"
-            v-text="$t('pages.meters.how_many_mbus')"
-          ></label>
+          <label for="num-mbus-sensors" v-text="$t('pages.meters.how_many_mbus')"></label>
           <div class="flex items-center">
             <div class="range-slider flex-grow">
               <input
@@ -166,16 +151,10 @@
 
       <div class="flex justify-center text-gray-900 mt-2">
         <div class="w-56 flex flex-col rounded-md shadow-lg overflow-hidden">
-          <div
-            class="bg-naito-yellow-100 flex items-center justify-center shadow-md"
-          >
-            <span class="font-heading py-8 text-2xl"
-              >CHF {{ initialCost }}</span
-            >
+          <div class="bg-naito-yellow-100 flex items-center justify-center shadow-md">
+            <span class="font-heading py-8 text-2xl">CHF {{ initialCost }}</span>
           </div>
-          <div
-            class="bg-naito-yellow-200 flex-grow flex items-center justify-center relative"
-          >
+          <div class="bg-naito-yellow-200 flex-grow flex items-center justify-center relative">
             <span
               class="absolute top-0 left-0 w-full py-2 text-center text-xl"
               v-text="$t('pages.meters.then')"
@@ -198,10 +177,7 @@
         ></a>
       </div>
 
-      <p
-        class="text-gray-400 text-sm mt-16"
-        v-text="$t('pages.meters.notice')"
-      ></p>
+      <p class="text-gray-400 text-sm mt-16" v-text="$t('pages.meters.notice')"></p>
     </section>
     <a
       :href="
@@ -292,13 +268,13 @@ export default {
     },
 
     tempSensorsCost() {
-      return Number(this.numTempSensors) * 120
+      return Number(this.numTempSensors) * 170
     },
     mbusSensosCost() {
-      return Number(this.numMbusSensors) * 150
+      return Number(this.numMbusSensors) * 210
     },
     serviceCost() {
-      return this.totalMonths * this.totalSensors * 7
+      return this.totalMonths * this.totalSensors * 9
     },
     installCost() {
       return this.totalSensors > 0 ? 240 + (this.totalSensors - 1) * 40 : 0
@@ -322,7 +298,7 @@ export default {
       )
     },
     serviceDiscountGlobalPercentage() {
-      return (1 - Math.pow(0.95, this.totalSensors / 1.5)) * 0.6
+      return (1 - Math.pow(0.95, this.totalSensors / 1.5)) * 0.8
     },
     serviceDiscountGlobal() {
       return (
