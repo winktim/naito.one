@@ -140,10 +140,14 @@
 
     <p>
       Interested in the product? You can use the tool below to
-      <strong>estimate the total cost for your specific needs</strong>.
+      <strong>estimate the total cost for your specific needs</strong>.<br />
+      The estimate includes the hardware's cost, it's installation and the
+      service per month. The service includes the hosting of your data, the
+      access to the platform, the support and replacment of defected
+      hardware.<br />
       <i>
-        <br />Please note that the prices shown below do not count as a
-        quotation and that actual prices may vary. <br />Please
+        Please note that the prices shown below do not count as a quotation and
+        that actual prices may vary. <br />Please
         <a href="mailto:hello@naito.one">get in touch</a> to recieve a complete
         quotation for free.
       </i>
