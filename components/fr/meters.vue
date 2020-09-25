@@ -144,10 +144,14 @@
 
     <p>
       Intéressés par le produit ? Vous pouvez utiliser l'outil ci-dessous pour
-      <strong>estimer le coût total selon vos besoins</strong>.
+      <strong>estimer le coût total selon vos besoins</strong>.<br />
+      L'estimation inclut le prix du matériel, son installation et le service
+      par mois. Le service inclut l'hébergement des données, l'accès à la
+      platforme, le support et le remplacement du matériel en cas de
+      défectuosité.<br />
       <i>
-        <br />Veuillez noter que les prix affichés ci-dessous ne constituent pas
-        une offre et que les prix pratiqués peuvent différer. <br />Veuillez
+        Veuillez noter que les prix affichés ci-dessous ne constituent pas une
+        offre et que les prix pratiqués peuvent différer. <br />Veuillez
         <a href="mailto:hello@naito.one">prendre contact avec nous</a> pour
         obtenir une offre complète gratuitement.
       </i>
