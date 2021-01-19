@@ -5,7 +5,7 @@
     <!-- Matomo Image Tracker-->
     <img
       src="https://analytics.naito.one/matomo.php?idsite=1&amp;rec=1&amp;action_name=Wiki"
-      style="border:0"
+      style="border: 0"
       alt
     />
     <!-- End Matomo -->

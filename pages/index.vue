@@ -49,7 +49,7 @@
     <!-- Matomo Image Tracker-->
     <img
       src="https://analytics.naito.one/matomo.php?idsite=1&amp;rec=1&amp;action_name=Index"
-      style="border:0"
+      style="border: 0"
       alt
     />
     <!-- End Matomo -->

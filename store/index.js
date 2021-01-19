@@ -25,7 +25,7 @@ export const mutations = {
 }
 
 export const getters = {
-  wikiUrl: state =>
+  wikiUrl: (state) =>
     'https://github.com/winktim/meters.ch/wiki' +
     (state.locale === 'fr' ? '/Home-fr' : ''),
 }

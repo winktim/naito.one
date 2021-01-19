@@ -45,28 +45,28 @@ module.exports = {
           '900-trans': 'rgba(33, 33, 33, 0.8)',
         },
         'naito-pink': {
-          '100': '#DA91C9',
-          '200': '#BD62C5',
+          100: '#DA91C9',
+          200: '#BD62C5',
         },
         'naito-green': {
-          '100': '#459090',
-          '200': '#326562',
+          100: '#459090',
+          200: '#326562',
         },
         'naito-yellow': {
-          '100': '#fded86',
-          '200': '#fad65e',
+          100: '#fded86',
+          200: '#fad65e',
         },
       },
       spacing: {
-        '15': '3.75rem',
+        15: '3.75rem',
       },
       height: {
-        '76': '19rem',
-        '100': '25rem',
+        76: '19rem',
+        100: '25rem',
       },
       width: {
-        '72': '18rem',
-        '168': '42rem',
+        72: '18rem',
+        168: '42rem',
       },
       maxHeight: {
         'screen-20': 'calc(100vh - 5rem)',
@@ -95,7 +95,7 @@ module.exports = {
     /**
      * Transform plugin
      */
-    function({ addUtilities, addComponents, e, prefix, config }) {
+    function ({ addUtilities, addComponents, e, prefix, config }) {
       const utilities = _.map(config('theme.transform'), (value, key) => {
         return {
           [`.${e(`translate-x-${key}`)}`]: {
@@ -117,7 +117,7 @@ module.exports = {
     /**
      * Transition plugin
      */
-    function({ addUtilities, addComponents, e, prefix, config }) {
+    function ({ addUtilities, addComponents, e, prefix, config }) {
       const utilities = _.map(
         config('theme.transitionProperties'),
         (propertyValue, propertyName) => {
@@ -141,7 +141,7 @@ module.exports = {
     /**
      * Lighten & Darken utility
      */
-    function({ addUtilities, addComponents, e, prefix, config }) {
+    function ({ addUtilities, addComponents, e, prefix, config }) {
       const utilities = _.map(
         config('theme.colorVariations'),
         (variationValue, variationName) => {
@@ -163,7 +163,7 @@ module.exports = {
     /**
      * Flip utility
      */
-    function({ addUtilities, addComponents, e, prefix, config }) {
+    function ({ addUtilities, addComponents, e, prefix, config }) {
       const utilities = [
         {
           [`.${e(`flip-x`)}`]: {

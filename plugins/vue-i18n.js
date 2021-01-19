@@ -16,7 +16,7 @@ export default ({ app, store }, inject) => {
     },
   })
 
-  inject('numberLocale', function() {
+  inject('numberLocale', function () {
     return numberLocale[store.state.locale]
   })
 }

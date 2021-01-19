@@ -2,7 +2,9 @@
   <div id="sidebar" :class="sidebarClasses">
     <!-- color overlay -->
     <div class="absolute top-0 left-0 w-full h-full sidebar-gradient"></div>
-    <section class="relative select-none flex justify-between md:items-center md:mx-4">
+    <section
+      class="relative select-none flex justify-between md:items-center md:mx-4"
+    >
       <button
         @click="closeSidebar"
         class="clickable w-15 h-15 text-gray-100 hover:text-gray-300 flex items-center justify-center text-2xl md:hidden"
@@ -10,7 +12,11 @@
         <i class="material-icons">menu</i>
       </button>
       <div class="flex items-center justify-center py-4">
-        <img src="/images/naito-white.svg" alt="Nait One Logo" class="h-10 mx-1" />
+        <img
+          src="/images/naito-white.svg"
+          alt="Nait One Logo"
+          class="h-10 mx-1"
+        />
         <p class="font-heading text-3xl">Naito.One</p>
       </div>
       <language-selector
@@ -37,7 +43,10 @@
       </li>
         -->
         <li class="my-1">
-          <a class="inline-action pl-4 bg-naito-green-200 text-white" :href="`mailto:${email}`">
+          <a
+            class="inline-action pl-4 bg-naito-green-200 text-white"
+            :href="`mailto:${email}`"
+          >
             <i class="material-icons pr-4">alternate_email</i>
             <span v-text="email"></span>
           </a>
@@ -58,7 +67,9 @@
       <!-- menu -->
       <ul>
         <li>
-          <p class="flex items-center py-3 px-4 font-semibold bg-gray-800-trans">
+          <p
+            class="flex items-center py-3 px-4 font-semibold bg-gray-800-trans"
+          >
             <i class="material-icons pr-4">category</i>
             <span v-text="$t('nav.products')"></span>
           </p>
@@ -76,7 +87,9 @@
           </ul>
         </li>
         <li>
-          <p class="flex items-center py-3 px-4 font-semibold bg-gray-800-trans">
+          <p
+            class="flex items-center py-3 px-4 font-semibold bg-gray-800-trans"
+          >
             <i class="material-icons pr-4">info</i>
             <span v-text="$t('nav.about')"></span>
           </p>

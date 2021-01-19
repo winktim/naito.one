@@ -36,7 +36,7 @@ export default {
       (!connection.saveData && connection.effectiveType === '4g')
     ) {
       Array.from(document.getElementsByClassName('background-image')).forEach(
-        element => {
+        (element) => {
           element.classList.add('background-image__highres')
         }
       )
@@ -60,7 +60,7 @@ export default {
     /**
      * @param {TouchEvent} e
      */
-    const lock = e => {
+    const lock = (e) => {
       swipeStartX = e.changedTouches[0].clientX
       swipeStartTime = e.timeStamp
     }
@@ -68,7 +68,7 @@ export default {
     /**
      * @param {TouchEvent} e
      */
-    const move = e => {
+    const move = (e) => {
       const x = e.changedTouches[0].clientX
       const time = e.timeStamp
       const dx = x - swipeStartX

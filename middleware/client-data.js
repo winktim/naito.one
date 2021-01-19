@@ -1,6 +1,6 @@
 import { getNavigatorLanguage } from '../assets/utils'
 
-export default function({ store }) {
+export default function ({ store }) {
   if (store.state.readClientData) {
     return
   }

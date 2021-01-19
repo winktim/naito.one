@@ -3,9 +3,9 @@
     <h1>Company</h1>
 
     <p>
-      <strong>Naito One</strong> is a swiss innovative IT company.
-      <br />The company was founded in 2019 by
-      <strong>Tim Winkelmann</strong> under the name "Naito One Winkelmann".
+      <strong>Naito One</strong> is a swiss innovative IT company. <br />The
+      company was founded in 2019 by <strong>Tim Winkelmann</strong> under the
+      name "Naito One Winkelmann".
     </p>
 
     <figure>
@@ -16,12 +16,18 @@
       </caption>
     </figure>
 
-    <p>Our goal is to provide intelligent and useful services and products, at first for companies, but also for private clients in the future.</p>
+    <p>
+      Our goal is to provide intelligent and useful services and products, at
+      first for companies, but also for private clients in the future.
+    </p>
 
     <p>
-      Our company has for objective to satisfy both it's clients and it's employes. For that purpose, we also innovate in the domain of work environment.
+      Our company has for objective to satisfy both it's clients and it's
+      employes. For that purpose, we also innovate in the domain of work
+      environment.
       <br />If working with us sounds interresting, please check out the
-      <nuxt-link to="/jobs">Jobs</nuxt-link>&nbsp;page, we might be looking for you.
+      <nuxt-link to="/jobs">Jobs</nuxt-link>&nbsp;page, we might be looking for
+      you.
     </p>
 
     <h2>The Studio</h2>
@@ -31,6 +37,10 @@
       <strong>Naito One</strong> is also a digital creation studio.
     </p>
 
-    <p>The studio's goal is to deliver custom products in the field of communication, such as video spots or posters, and to explore the emerging technologies to create content in innovative ways.</p>
+    <p>
+      The studio's goal is to deliver custom products in the field of
+      communication, such as video spots or posters, and to explore the emerging
+      technologies to create content in innovative ways.
+    </p>
   </div>
 </template>

@@ -10,7 +10,10 @@
     </button>
     <ul class="flex mr-4">
       <li class="mx-2">
-        <a class="action bg-naito-green-200 text-white" :href="`mailto:${email}`">
+        <a
+          class="action bg-naito-green-200 text-white"
+          :href="`mailto:${email}`"
+        >
           <span v-text="email"></span>
         </a>
       </li>
@@ -52,4 +55,3 @@ export default {
   },
 }
 </script>
-
