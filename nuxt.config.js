@@ -1,11 +1,7 @@
 const features = ['es2015', 'es2016', 'IntersectionObserver'].join('%2C')
 
 export default {
-  ssr: false,
   target: 'static',
-  generate: {
-    subFolders: false,
-  },
   /*
    ** Headers of the page
    */
