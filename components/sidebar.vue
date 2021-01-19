@@ -27,7 +27,7 @@
         @change="SET_LOCALE($event)"
       ></language-selector>
     </section>
-    <nav class="relative overflow-y-auto max-h-screen-20">
+    <nav class="relative overflow-y-auto overflow-x-hidden max-h-screen-20">
       <!-- quick links -->
       <ul class="mb-8">
         <!--
