@@ -20,8 +20,7 @@ module.exports = {
     transitionProperties: {
       'transform': 'transform',
       'opacity': 'opacity',
-      'padding': 'padding',
-      'padding-top': 'padding-top',
+      'padding-top': 'pt',
       'color': 'color',
       'background': 'background',
     },

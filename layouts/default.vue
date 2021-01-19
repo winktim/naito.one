@@ -1,13 +1,12 @@
 <template>
   <div
-    ref="scroller"
-    class="background-image font-content w-screen h-screen flex overflow-x-hidden"
+    class="background-image font-content w-full flex"
   >
     <sidebar></sidebar>
-    <div class="flex-grow flex flex-col md:pl-64 w-full">
+    <div class="flex-grow flex flex-col md:pl-64 w-full min-h-screen">
       <appbar></appbar>
       <main
-        class="flex-grow main-gradient pb-24 pt-15 md:pt-0 transition-padding-top-200 text-gray-100 px-6 md:px-16 lg:px-32 xl:px-56"
+        class="flex-grow main-gradient pb-24 pt-15 md:pt-0 transition-pt-200 text-gray-100 px-6 md:px-16 lg:px-32 xl:px-56"
       >
         <nuxt />
       </main>
@@ -92,12 +91,6 @@ export default {
 
     document.body.addEventListener('touchstart', lock, { capture: false })
     document.body.addEventListener('touchend', move, { capture: false })
-  },
-  watch: {
-    $route() {
-      // make sure the page is scrolled to the top
-      scrollToTop(this.$refs.scroller)
-    },
   },
 }
 </script>

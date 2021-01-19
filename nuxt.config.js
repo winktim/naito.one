@@ -41,6 +41,7 @@ export default {
     '~/assets/scss/icons.scss',
     '~/assets/scss/components.scss',
     '~/assets/scss/fonts.scss',
+    '~/assets/scss/reset.scss',
     '~/assets/scss/styles.scss',
     '~/assets/scss/marked.scss',
   ],
