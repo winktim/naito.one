@@ -9,22 +9,23 @@
     "build": "nuxt build",
     "start": "cross-env NUXT_HOST=0.0.0.0 nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup",
+    "reformat": "prettier \"**/*.{js,json,html,vue}\" --write"
   },
   "dependencies": {
-    "luxon": "^1.17.2",
-    "node-sass": "^4.12.0",
-    "nuxt": "^2.0.0",
-    "nuxt-purgecss": "^0.2.1",
-    "sass-loader": "^7.1.0",
-    "vue-i18n": "^8.11.2"
+    "luxon": "^1.25.0",
+    "nuxt": "^2.14.12",
+    "vue-i18n": "^8.22.2"
   },
   "devDependencies": {
-    "cross-env": "^5.2.0",
-    "lodash": "^4.17.11",
+    "cross-env": "^7.0.3",
+    "lodash": "^4.17.20",
+    "node-sass": "^5.0.0",
+    "nuxt-purgecss": "^1.0.0",
     "nodemon": "^1.18.9",
-    "prettier": "^1.16.4",
+    "prettier": "2.1.2",
     "push-dir": "^0.4.1",
+    "sass-loader": "^10.1.0",
     "tailwindcss": "^1.0.0"
   }
 }
