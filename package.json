@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "cross-env": "^7.0.3",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "node-sass": "^5.0.0",
     "nuxt-purgecss": "^1.0.0",
     "nodemon": "^1.18.9",
