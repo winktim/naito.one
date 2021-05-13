@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/meters/wiki", {data:[{}],fetch:[],mutations:[]});

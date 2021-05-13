@@ -1,0 +1,1 @@
+#meters-image-outer>a{top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%)}#meters-image-outer>a:active+#meters-image,#meters-image-outer>a:hover+#meters-image{-webkit-transform:scale(1.05);transform:scale(1.05)}#meters-image{background-image:url(/images/compteur-01.jpg);background-position:50%;background-repeat:no-repeat;background-size:cover}
