@@ -299,7 +299,7 @@ export default {
       return this.totalMonths * this.totalSensors * 9
     },
     installCost() {
-      return this.totalSensors > 0 ? 240 + (this.totalSensors - 1) * 40 : 0
+      return this.totalSensors > 0 ? 90 + (this.totalSensors - 1) * 30 : 0
     },
     sensorDiscountPlan() {
       return this.totalSensors < 5 ? 0 : this.totalSensors < 10 ? -10 : -20
@@ -320,7 +320,7 @@ export default {
       )
     },
     serviceDiscountGlobalPercentage() {
-      return (1 - Math.pow(0.95, this.totalSensors / 1.5)) * 0.8
+      return (1 - Math.pow(0.9, this.totalSensors / 1.5)) * 0.8
     },
     serviceDiscountGlobal() {
       return (
